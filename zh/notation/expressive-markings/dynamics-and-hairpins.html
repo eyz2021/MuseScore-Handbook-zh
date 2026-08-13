@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>力度记号与力度变化线 · MuseScore Handbook</title>
+<link rel="stylesheet" href="../../_static/style.css">
+</head>
+<body>
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+<aside class="sidebar">
+  <div class="brand"><a href="../../index.html">♪ MuseScore<br>Handbook</a></div>
+  <div class="searchbox">
+    <input id="search-input" type="search" placeholder="搜索文档…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="nav"><div class="nav-section"><h3>目录</h3>
+<a class="nav-link " href="../../index.html">MuseScore Studio 使用手册</a>
+<a class="nav-link " href="../../about-the-handbook.html">关于本手册</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../about-the-handbook/using-gitbook.html">使用 GitBook</a>
+<a class="nav-link " href="../../about-the-handbook/style-guide.html">样式指南</a>
+<a class="nav-link " href="../../about-the-handbook/editing-the-handbook.html">编辑本手册</a>
+<a class="nav-link " href="../../about-the-handbook/license.html">许可证</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../alternative-notation/slash-notation.html">斜线记谱</a>
+<a class="nav-link " href="../../alternative-notation/mensural-notation-and-mensurstrich.html">有量记谱与 Mensurstrich</a>
+<a class="nav-link " href="../../alternative-notation/custom-staff-types.html">自定义谱表类型</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../appendix/changes-for-mdl-percussion.html">MDL 打击乐变更</a>
+<a class="nav-link " href="../../appendix/upgrade-from-musescore-3.x.html">从 MuseScore 3.x 升级</a>
+<a class="nav-link " href="../../appendix/all-keyboard-shortcuts.html">全部键盘快捷键</a>
+<a class="nav-link " href="../../appendix/command-line-usage.html">命令行用法</a>
+<a class="nav-link " href="../../appendix/glossary.html">术语表</a>
+<a class="nav-link " href="../../appendix/music-fonts.html">音乐字体</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../basics/working-with-multiple-voices.html">使用多个声部</a>
+<a class="nav-link " href="../../basics/using-the-palettes.html">使用面板</a>
+<a class="nav-link " href="../../basics/alternative-note-input-methods.html">其他音符输入方法</a>
+<a class="nav-link " href="../../basics/parts.html">分谱</a>
+<a class="nav-link " href="../../basics/copy-and-paste.html">复制与粘贴</a>
+<a class="nav-link " href="../../basics/properties-panel.html">属性面板</a>
+<a class="nav-link " href="../../basics/input-by-duration-mode.html">按时值输入模式</a>
+<a class="nav-link " href="../../basics/setting-up-your-score.html">新建乐谱</a>
+<a class="nav-link " href="../../basics/adding-and-removing-measures.html">添加与删除小节</a>
+<a class="nav-link " href="../../basics/adjusting-elements-directly.html">直接调整元素</a>
+<a class="nav-link " href="../../basics/editing-notes-and-rests.html">编辑音符与休止符</a>
+<a class="nav-link " href="../../basics/entering-notes-and-rests.html">输入音符与休止符</a>
+<a class="nav-link " href="../../basics/selecting-elements.html">选择元素</a>
+<a class="nav-link " href="../../basics/default-keyboard-shortcuts.html">默认键盘快捷键</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../customization/preferences.html">偏好设置</a>
+<a class="nav-link " href="../../customization/appearance.html">外观</a>
+<a class="nav-link " href="../../customization/workspaces.html">工作区</a>
+<a class="nav-link " href="../../customization/toolbars-and-windows.html">工具栏与窗口</a>
+<a class="nav-link " href="../../customization/plugins.html">插件</a>
+<a class="nav-link " href="../../customization/templates-and-styles.html">模板与样式</a>
+<a class="nav-link " href="../../customization/language.html">语言</a>
+<a class="nav-link " href="../../customization/keyboard-shortcuts.html">键盘快捷键</a>
+<a class="nav-link " href="../../customization/palettes.html">面板</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../file-management/working-with-musicxml-files.html">使用 MusicXML 文件</a>
+<a class="nav-link " href="../../file-management/share-on-audio.com.html">分享到 Audio.com</a>
+<a class="nav-link " href="../../file-management/publish-to-musescore.com.html">发布到 MuseScore.com</a>
+<a class="nav-link " href="../../file-management/backup-and-recovered-files.html">备份与恢复文件</a>
+<a class="nav-link " href="../../file-management/file-export.html">导出文件</a>
+<a class="nav-link " href="../../file-management/opening-and-saving-scores.html">打开与保存乐谱</a>
+<a class="nav-link " href="../../file-management/project-properties.html">项目属性</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../formatting/score-size-and-spacing.html">乐谱大小和间距</a>
+<a class="nav-link " href="../../formatting/using-frames-for-additional-content.html">使用框架添加额外内容</a>
+<a class="nav-link " href="../../formatting/using-sections-for-multiple-movements-or-songs.html">使用章节进行多乐章或多首歌曲</a>
+<a class="nav-link " href="../../formatting/positioning-of-elements.html">元素定位</a>
+<a class="nav-link " href="../../formatting/working-with-images.html">处理图像</a>
+<a class="nav-link " href="../../formatting/systems-and-horizontal-spacing.html">系统和水平间距</a>
+<a class="nav-link " href="../../formatting/pages-and-vertical-spacing.html">页面和垂直间距</a>
+<a class="nav-link " href="../../formatting/page-layout-concepts.html">页面排版概念</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar.html">吉他</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion.html">打击乐</a>
+<a class="nav-link " href="../../idiomatic-notation/harp.html">竖琴</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard.html">键盘</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar/creating-a-tablature-staff.html">创建吉他谱（TAB）谱表</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-techniques.html">吉他技巧</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-bends.html">吉他推弦与下压</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagrams.html">品位图</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagram-legend.html">品位图图例</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/applying-capos.html">应用变调夹</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/alternate-string-tunings.html">替代调弦</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/customizing-a-tablature-staff.html">自定义吉他谱谱表</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">输入与编辑吉他谱记谱</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/keyboard/accordion-notation.html">手风琴记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/cross-staff-notation.html">跨谱表记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/pedal.html">踏板</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/percussion/other-percussion-notation.html">其他打击乐记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/percussion-kit-customization.html">打击乐套件自定义</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/customizing-the-percussion-panel.html">自定义打击乐面板</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/inputting-percussion-notation.html">输入打击乐记谱</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../introduction/download-and-installation.html">下载与安装</a>
+<a class="nav-link " href="../../introduction/upgrading-from-earlier-versions.html">从早期版本升级</a>
+<a class="nav-link " href="../../introduction/create-your-first-score.html">创建你的第一份乐谱</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../navigation/accessibility.html">无障碍功能</a>
+<a class="nav-link " href="../../navigation/timeline.html">时间线</a>
+<a class="nav-link " href="../../navigation/navigating-your-score.html">浏览乐谱</a>
+<a class="nav-link " href="../../navigation/the-user-interface.html">用户界面</a>
+<a class="nav-link " href="../../navigation/braille.html">盲文</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../instruments-staves-and-systems.html">乐器、谱表和系统</a>
+<a class="nav-link " href="../repeats.html">反复</a>
+<a class="nav-link " href="../rhythm-meter-and-measures.html">节奏、拍号与小节</a>
+<a class="nav-link " href="../expressive-markings.html">表情记号</a>
+<a class="nav-link " href="../pitch.html">音高</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="grace-notes.html">倚音</a>
+<a class="nav-link " href="other-symbols.html">其他符号</a>
+<a class="nav-link " href="other-lines.html">其他线条</a>
+<a class="nav-link active" href="dynamics-and-hairpins.html">力度记号与力度变化线</a>
+<a class="nav-link " href="breaths-and-pauses.html">换气记号与停顿</a>
+<a class="nav-link " href="articulations.html">演奏记号</a>
+<a class="nav-link " href="arpeggios-and-glissandos.html">琶音与滑音</a>
+<a class="nav-link " href="laissez-vibrer-ties.html">自由延长延音线</a>
+<a class="nav-link " href="ornaments.html">装饰音</a>
+<a class="nav-link " href="slurs-and-ties.html">连音线与延音线</a>
+<a class="nav-link " href="tremolos-and-rolls.html">震音与滚奏</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="../instruments-staves-and-systems/instruments-and-system-markings.html">乐器和系统标记</a>
+<a class="nav-link " href="../instruments-staves-and-systems/mid-score-instrument-changes.html">乐谱中途更换乐器</a>
+<a class="nav-link " href="../instruments-staves-and-systems/showing-staves-only-where-needed.html">仅在需要时显示谱表</a>
+<a class="nav-link " href="../instruments-staves-and-systems/implode-and-explode.html">合并与展开</a>
+<a class="nav-link " href="../instruments-staves-and-systems/brackets.html">括号</a>
+<a class="nav-link " href="../instruments-staves-and-systems/staff-part-properties.html">谱表/分谱属性</a>
+<a class="nav-link " href="../instruments-staves-and-systems/staff-type-change.html">谱表类型更改</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../pitch/octave-lines.html">八度线</a>
+<a class="nav-link " href="../pitch/transposition.html">移调</a>
+<a class="nav-link " href="../pitch/noteheads.html">符头</a>
+<a class="nav-link " href="../pitch/key-signatures.html">调号</a>
+<a class="nav-link " href="../pitch/clefs.html">谱号</a>
+<a class="nav-link " href="../pitch/respell-pitches.html">重拼音高</a>
+<a class="nav-link " href="../pitch/ambitus.html">音域标记</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../repeats/changes-and-courtesies-at-repeats-and-jumps.html">反复和跳转处的变更与提示性记号</a>
+<a class="nav-link " href="../repeats/repeat-signs.html">反复记号</a>
+<a class="nav-link " href="../repeats/voltas.html">反复跳房子</a>
+<a class="nav-link " href="../repeats/measure-and-multimeasure-repeats.html">小节反复与多小节反复</a>
+<a class="nav-link " href="../repeats/items-across-repeats-and-jumps.html">跨越反复和跳转的项目</a>
+<a class="nav-link " href="../repeats/jumps-and-markers.html">跳转与标记</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../rhythm-meter-and-measures/measure-and-multimeasure-rests.html">小节休止符与多小节休止符</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-properties.html">小节属性</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/barlines.html">小节线</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-numbering.html">小节编号</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/pickup-and-non-metered-measures.html">弱起小节与非计拍小节</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/time-signatures.html">拍号</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/stems-and-flags.html">符干与符尾</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/beams.html">符杠</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/tuplets.html">连音</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/regroup-rhythms.html">重新组合节奏</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-midi.html">使用 MIDI</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-vst-and-vsti.html">使用 VST 和 VSTi</a>
+<a class="nav-link " href="../../sound-and-playback/sound-flags.html">声音标记</a>
+<a class="nav-link " href="../../sound-and-playback/swing-playback.html">摇摆播放</a>
+<a class="nav-link " href="../../sound-and-playback/playback-controls.html">播放控件</a>
+<a class="nav-link " href="../../sound-and-playback/mixer.html">混音器</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds/online-sounds.html">在线音色</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../support/revert-to-factory-settings.html">恢复出厂设置</a>
+<a class="nav-link " href="../../support/troubleshooting.html">故障排除</a>
+<a class="nav-link " href="../../support/getting-help.html">获取帮助</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../text/chord-symbols.html">和弦符号</a>
+<a class="nav-link " href="../../text/fingering.html">指法</a>
+<a class="nav-link " href="../../text/rehearsal-marks.html">排练标记</a>
+<a class="nav-link " href="../../text/figured-bass.html">数字低音</a>
+<a class="nav-link " href="../../text/text-blocks.html">文本块</a>
+<a class="nav-link " href="../../text/entering-and-editing-text.html">文本的输入与编辑</a>
+<a class="nav-link " href="../../text/formatting-text.html">格式化文本</a>
+<a class="nav-link " href="../../text/lyrics.html">歌词</a>
+<a class="nav-link " href="../../text/staff-system-and-expression-text.html">谱表文本、系统文本和表情文本</a>
+<a class="nav-link " href="../../text/tempo-markings.html">速度标记</a>
+<a class="nav-link " href="../../text/header-and-footer.html">页眉和页脚</a></div></details>
+<details open><summary>Video</summary><div class="sub"><a class="nav-link " href="../../video/installing-ffmpeg.html">安装 FFmpeg</a>
+<a class="nav-link " href="../../video/exporting-video.html">导出视频</a></div></details>
+</div></nav>
+</aside>
+<label for="sidebar-toggle" class="backdrop"></label>
+<main class="content">
+  <header class="topbar">
+    <label for="sidebar-toggle" class="menu-btn">☰</label>
+    <div class="crumb">MuseScore Studio 使用手册</div>
+    <a class="lang-btn" href="../../../notation/expressive-markings/dynamics-and-hairpins.html">English</a>
+  </header>
+  <article class="article"><h1 id="dynamics-and-hairpins">力度记号与力度变化线</h1>
+<h2 id="overview">概述</h2>
+<p>所有力度记号都可在<strong>力度</strong>面板中找到：</p>
+<figure><img src="../../assets/GjvF2xR0fSyAExapz3UA.png" alt="力度面板" width="295"><figcaption><p><strong>力度</strong>面板</p></figcaption></figure>
+
+<p>其中包括所有标准力度记号（<strong><em>p</em></strong>、<strong><em>mf</em></strong>、<strong><em>ff</em></strong> 等），以及力度变化线形式的渐强/渐弱标记：</p>
+<figure><img src="../../assets/KNQFHolNUtW7BFbNuJ1o.png" alt="力度变化线"><figcaption></figcaption></figure>
+
+<p>以及 cresc. 和 dim. 文本线形式，它们功能相同，但更适合较长的跨度：</p>
+<figure><img src="../../assets/ucp46X3WSNlAsTvYkL38.png" alt="渐强和渐弱线"><figcaption></figcaption></figure>
+
+<p>除非另有说明，本文档中凡提及力度变化线之处，同样适用于 <em>cresc./dim.</em> 线。</p>
+<h2 id="adding-dynamics-and-hairpins">添加力度记号和力度变化线</h2>
+<h3 id="from-the-palette">从面板</h3>
+<p>要向乐谱添加强度记号，可以：</p>
+<ul>
+<li>选中一个或多个音符，然后在<strong>力度</strong>面板中单击某项，或</li>
+<li>将某项从<strong>力度</strong>面板拖动到音符上。</li>
+</ul>
+<p>要向乐谱添加强度变化线：</p>
+<ol>
+<li>通过以下方式选中要添加强度变化线的音符：</li>
+<li>选中单个音符；此时力度变化线会一直绘制到下一个音符，或</li>
+<li>选中一段音符或小节</li>
+<li>通过以下方式添加强度变化线：</li>
+<li>在力度面板中单击力度变化线，或</li>
+<li>使用键盘快捷键 <kbd>&lt;</kbd> 添加渐强力度变化线，或 <kbd>&gt;</kbd> 输入渐弱力度变化线。</li>
+</ol>
+<p>您也可以将力度变化线从面板直接拖动到音符上，此时它会延伸到小节末尾。</p>
+<div class="hint hint-info">
+<p>力度变化线的右端会依附到应用范围<em>之后</em>的第一个音符（或休止符）上，但会绘制到该音符之前结束。因此，请勿将最后一个音符包含在您选中的范围内。</p>
+</div>
+<h3 id="from-the-dynamics-popup">从力度弹出窗口</h3>
+<p>您也可以通过力度弹出窗口添加强度记号：</p>
+<ol>
+<li>选中一个音符</li>
+<li>键入 <kbd>Ctrl</kbd>+<kbd>D</kbd>（Mac：<kbd>Cmd</kbd>+<kbd>D</kbd>）打开力度弹出窗口</li>
+<li>在弹出窗口中单击一个力度记号，或直接键入（例如 <code>pp</code> 或 <code>mf</code> 等），然后按 <kbd>Esc</kbd> 或单击乐谱的空白区域，此时如果文本有效，将转换为力度记号。</li>
+</ol>
+<figure><img src="../../assets/h7vUnnRUZGQnbIFpbCMn.png" alt="" width="236"><figcaption><p>力度弹出窗口</p></figcaption></figure>
+
+<p>您可以通过单击左右箭头在弹出窗口中访问更多力度记号。</p>
+<p>选中一个力度记号时，您还可以通过拖动力度记号右侧的手柄到您希望它结束的音符或锚点上，直接从该力度记号创建力度变化线。松开后，力度弹出窗口会重新出现，您可以选择一个新的力度记号放在力度变化线的末端。如果该力度记号的级别低于起始力度记号，力度变化线将从渐强切换为渐弱。</p>
+<p>这使得快速高效地输入一连串力度记号和力度变化线成为可能。</p>
+<h2 id="replacing-dynamics">替换力度记号</h2>
+<p>选中一个力度记号时，您可以通过在力度面板或力度弹出窗口中单击另一个力度记号来轻松替换它。新的力度记号将替换所选的那个。</p>
+<h2 id="editing-hairpins">编辑力度变化线</h2>
+<h3 id="adjusting-hairpin-height">调整力度变化线高度</h3>
+<p>力度变化线开口端底部的手柄（此处显示为选中时的灰色）可用于控制其高度：</p>
+<figure><img src="../../assets/PbikwkDBSeBS49dHu7jC.png" alt="力度变化线高度调整"><figcaption></figcaption></figure>
+
+<p>操作方法：</p>
+<ol>
+<li>选中力度变化线</li>
+<li>选中高度手柄</li>
+<li>向上或向下拖动手柄，或使用 <kbd>Up</kbd>/<kbd>Down</kbd> 方向键。</li>
+</ol>
+<p>您也可以通过<strong>属性</strong>面板调整高度：参见<a href="#style">力度变化线属性</a>。</p>
+<h3 id="drawing-at-an-angle">以角度绘制</h3>
+<p>默认情况下，所有力度变化线都是水平绘制的。要以角度绘制，请首先确保在<strong>属性</strong>面板（<strong>样式</strong>选项卡中）勾选了<strong>允许斜向</strong>框。然后您就可以在垂直方向上独立移动力度变化线的起点和终点手柄。</p>
+<h2 id="assigning-dynamics-to-voices">将力度记号分配给声部</h2>
+<div class="embed-video"><iframe src="https://www.youtube.com/embed/6eFKACaBU5M" title="YouTube 视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>默认情况下，力度记号在输入时会被分配给乐器上的所有声部。如果您希望将所有力度记号分配给它们所应用音符的声部，可在<strong>偏好设置 -&gt; 音符输入 -&gt; 声部分配</strong>中将此作为选项启用：</p>
+<figure><img src="../../assets/enmzc8HDu4sUqrjiwUDW.png" alt="" width="316"><figcaption></figcaption></figure>
+
+<p>更改此偏好设置不会影响任何现有力度记号的分配。</p>
+<p>无论此设置如何，您都可以在添加时直接将力度记号分配给特定声部：</p>
+<ol>
+<li>在乐谱中选中一个音符或休止符</li>
+<li>在按住 <kbd>Ctrl</kbd>（Mac：<kbd>Cmd</kbd>）的同时，单击<strong>力度</strong>面板中的力度记号</li>
+<li>该力度记号将被分配给所选音符或休止符的声部。</li>
+</ol>
+<p>（目前，从面板拖动力度记号或使用力度弹出窗口时，此方法不生效。在这些情况下，力度记号会被分配给所有声部。）</p>
+<p>您可以通过多种方式更改现有力度记号的声部分配。首先，选中力度记号并单击<strong>属性 -&gt; 声部分配</strong>中的某个按钮：</p>
+<figure><img src="../../assets/7xbGT4ybXGF3Sntvtln0.png" alt="单谱表乐器的声部分配选项"><figcaption></figcaption></figure>
+
+<p>对于有多条谱表的乐器，单击<strong>全部</strong>按钮会打开一个菜单，其中包含针对以下内容的独立选项：</p>
+<ul>
+<li><strong>此乐器上的所有声部</strong>（乐器所有谱表上的所有声部）</li>
+<li><strong>仅此谱表上的所有声部</strong>（力度记号所依附谱表上的所有声部）</li>
+</ul>
+<figure><img src="../../assets/N2liwytB3uu5lBQJYvGq.png" alt="多谱表乐器的声部分配选项"><figcaption></figcaption></figure>
+
+<p>您还可以：</p>
+<ul>
+<li>单击顶部工具栏中的某个声部按钮，以分配到声部 1–4（此方法无法选择<strong>全部</strong>），或</li>
+<li>使用键盘快捷键：</li>
+<li>声部 <strong>1</strong>–<strong>4</strong>：<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>1</kbd>–<kbd>4</kbd>（Mac：<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>1</kbd>–<kbd>4</kbd>）</li>
+<li><strong>全部</strong>：<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>0</kbd>（Mac：<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>0</kbd>）</li>
+</ul>
+<p>对于有多条谱表的乐器，后一个快捷键将应用<strong>乐器上的所有声部</strong>选项。对于<strong>仅此谱表上的所有声部</strong>，请使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>-</kbd>（Mac：<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>-</kbd>）。</p>
+<div class="hint hint-info">
+<p>在播放中，力度记号会从其出现的位置起，作用于所分配的声部，直到遇到同一声部中的另一个力度记号，或影响所有声部的力度记号为止。</p>
+<p>请参阅<a href="#dynamics-playback-compatibility">力度播放兼容性</a>，了解声部分配功能在不同声音技术下的表现。</p>
+</div>
+<h2 id="positioning-dynamics-and-hairpins">定位力度记号和力度变化线</h2>
+<p>在 <strong>格式 → 样式 → 力度与力度变化线 → 力度记号和力度变化线的默认位置</strong> 中有三个选项，控制力度的整体定位：</p>
+<figure><img src="../../assets/fY4cpONEM4sqsU0nT5pV.png" alt="力度与力度变化线默认定位"><figcaption></figcaption></figure>
+
+<ul>
+<li><strong>位置</strong>决定力度记号是根据其<a href="#assigning-voices-to-dynamics">声部分配</a>来定位（“基于声部”，默认），还是全部位于“上方”或“下方”</li>
+<li><strong>在人声乐器上放置在谱表上方</strong>指定在人声谱表上力度记号是否应位于谱表上方（默认开启）</li>
+<li><strong>在大谱表乐器上自动居中</strong>会自动将力度记号在多谱表乐器的谱表之间垂直居中（默认开启）。</li>
+</ul>
+<h3 id="voice-based-positioning">基于声部的定位</h3>
+<p>如果选择了<strong>基于声部</strong>的位置，<a href="#assigning-voices-to-dynamics">声部分配</a>将如下影响力度记号的默认位置：</p>
+<ul>
+<li>声部 1 的力度记号，如果该节奏位置只有一个声部，则位于谱表下方，否则位于上方</li>
+<li>声部 3 的力度记号位于谱表上方</li>
+<li>声部 2 和声部 4 的力度记号位于谱表下方</li>
+<li>分配给<strong>所有</strong>声部的力度记号位于谱表下方</li>
+</ul>
+<p>任何力度记号的位置都可以通过<strong>属性 → 位置</strong>显式覆盖。</p>
+<div class="hint hint-info">
+<p>如果启用了<strong>在人声乐器上放置在谱表上方</strong>，那么在人声谱表上，分配给声部 1 的力度记号将位于谱表上方，分配给该谱表上所有声部的力度记号也位于谱表上方。声部 2 和声部 4 的力度记号仍位于下方。</p>
+</div>
+<h3 id="centering-dynamics-between-staves">在谱表之间居中力度记号</h3>
+<p>大谱表乐器（例如键盘、键盘打击乐、竖琴）上的力度记号可以在谱表之间垂直居中。</p>
+<p>如果开启了<strong>在大谱表谱表上自动居中</strong>选项：</p>
+<p>默认情况下，力度记号会在以下情况下自动居中（即当：</p>
+<ul>
+<li>力度记号的上方或下方（根据其相对于所依附谱表的位置）存在同一乐器上可与之居中对齐的谱表</li>
+<li><strong>属性 -&gt; 声部分配</strong>设置为<strong>乐器上的所有声部</strong></li>
+<li><strong>属性 -&gt; 在谱表之间居中</strong>设置为<strong>自动</strong></li>
+<li>在 <strong>格式 -&gt; 样式 -&gt; 力度与力度变化线</strong> 中，<strong>在大谱表乐器上自动居中</strong>选项开启</li>
+<li>未对力度记号应用手动 Y 偏移。</li>
+</ul>
+<p>您也可以通过将<strong>在谱表之间居中</strong>设置为<strong>开</strong>，并根据您要居中到的谱表在上方还是下方来配置<strong>位置</strong>，从而手动居中力度记号。</p>
+<h3 id="avoiding-barlines">避开小节线</h3>
+<p>力度记号居中于其所依附的音符或休止符下方。对于 <strong><em>ppp</em></strong> 这类较长的力度记号，当有与下方谱表相连的小节线时，它们很容易与其前后的小节线发生碰撞。默认情况下，力度项目会向左或向右偏移以避开这些碰撞。此行为可以全局关闭（<strong>格式 -&gt; 样式 -&gt; 力度与力度变化线 -&gt; 避开小节线</strong>），或通过<strong>属性</strong>面板对特定项目关闭。</p>
+<figure><img src="../../assets/6Ks3JHOs2Eur073xYokS.png" alt="" width="137"><figcaption><p><strong>避开小节线</strong>开启</p></figcaption></figure>
+
+<figure><img src="../../assets/goXMVx7KHWdLkY1umtBE.png" alt="" width="144"><figcaption><p><strong>避开小节线</strong>关闭</p></figcaption></figure>
+
+<p>第二张图显示了关闭此选项但开启文本遮罩（<strong>格式 -&gt; 样式 -&gt; 小节线 -&gt; 用相交文本遮罩小节线</strong>）时的结果。如果此选项也关闭，小节线将绘制在力度记号之上。</p>
+<p>如果力度记号前后键入了附加文本，该文本也会被纳入避开小节线的范围。详情参见<a href="#text-as-part-of-a-dynamics-item">作为力度项目一部分的文本</a>。</p>
+<h2 id="moving-dynamics-and-hairpins">移动力度记号和力度变化线</h2>
+<p>力度记号以及力度变化线的端点不必只依附于音符或休止符，也可以移动到较长时值内的节奏位置。参见<a href="../../basics/adjusting-elements-directly.html#anchors">锚点</a>，另请参阅<a href="../../basics/adjusting-elements-directly.html#changing-the-range-of-a-line">更改线条的范围</a>。</p>
+<p>如果力度记号在一侧或两侧吸附了力度变化线，这些力度变化线的端点会随力度记号移动。参见<a href="#snapping-and-alignment">吸附与对齐</a>。</p>
+<h2 id="snapping-and-alignment">吸附与对齐</h2>
+<p>如果一段表情文本与力度记号处于相同位置，且具有相同的声部分配和相同的位置设置（上方/下方），这两个项目将吸附在一起，表情文本位于力度记号之后。如果任一项目移动，另一个也会跟随。</p>
+<p>要将表情文本与力度记号解耦：</p>
+<ol>
+<li>选中文本</li>
+<li>转到<strong>属性</strong>面板</li>
+<li>在<strong>表情</strong>下，取消勾选<strong>与前面的力度记号对齐</strong>。</li>
+</ol>
+<p>然后您就可以独立移动这两个项目了。</p>
+<p>如果您想完全禁用此吸附行为，请取消勾选<strong>格式 -&gt; 样式 -&gt; 表情文本 -&gt; 吸附到力度记号</strong>。</p>
+<p>如果力度变化线在与力度记号相同的位置开始和/或结束，且具有相同的声部分配和相同的位置设置（上方/下方），力度变化线将自动与任一端的一个或多个力度记号垂直对齐。</p>
+<p>要为特定力度变化线禁用此行为：</p>
+<ol>
+<li>选中力度变化线</li>
+<li>转到<strong>属性</strong>面板</li>
+<li>在<strong>表情</strong>下的<strong>位置</strong>选项卡中，取消勾选<strong>吸附到前一个</strong>（禁用与力度变化线开头任何力度记号的对齐）和/或<strong>吸附到下一个</strong>（禁用与末尾任何力度记号的对齐）。</li>
+</ol>
+<p>将已吸附或已对齐项目的位置翻转到谱表的另一侧，或更改任一项目的声部分配，将自动停止其吸附或对齐。</p>
+<h2 id="combining-dynamics-and-text">组合力度与文本</h2>
+<p>有两种方法可以组合力度和文本，它们之间存在细微但重要的差异。</p>
+<h3 id="dynamics-and-expression-text">力度与表情文本</h3>
+<p>当力度记号后跟表情标记时，例如 <strong><em>p</em><em> dolce</em> 或 </strong><em>f</em><em> espress.</em>，最好将力度记号和表情文本作为单独的项目输入。两者会自动吸附在一起（参见<a href="#snapping-and-alignment">吸附与对齐</a>）。</p>
+<p>以这种方式向力度记号添加表情文本的最快方法是：</p>
+<ol>
+<li>通过任意方法在乐谱中输入一个力度记号（输入后力度记号会被选中）</li>
+<li>单击<strong>文本</strong>面板中的<em>表情</em>项，这会在力度记号之后添加一段表情文本</li>
+<li>根据需要编辑表情文本（假设文本已被选中——输入后确实会被选中，只需按 <kbd>Enter</kbd> 进入编辑模式）。</li>
+</ol>
+<p>您也可以反过来输入（先表情，后力度），不过表情文本仍会被放置在力度记号之后。</p>
+<p><em>cresc./dim.</em> 文本线可以完全相同的方式添加到力度记号上，并且会像力度变化线一样吸附到力度记号。</p>
+<h3 id="text-as-part-of-a-dynamics-item">作为力度项目一部分的文本</h3>
+<p>如果文本是力度短语的一部分，例如 <em>più </em><em>p</em><strong> 或 </strong><em>f</em><em> sub.</em>，通常最好将这些文本直接键入力度记号中，以便将其视为单个项目。这也是将文本放在力度记号<em>之前</em>的唯一方法，因为表情项目在吸附时总是被放置在力度记号之后。</p>
+<ol>
+<li>双击力度记号，或选中它并按 <kbd>Enter</kbd>，进入编辑模式</li>
+<li>使用光标键移动到项目的开头或结尾（如有必要）</li>
+<li>键入文本。</li>
+</ol>
+<p>键入力度项目中的任何文本都会以表情文本样式显示，并独立于力度符号进行缩放。</p>
+<p>当开启<strong>避开小节线</strong>时，这适用于力度项目的整体，包括键入项目本身的任何文本。它<em>不</em>适用于可能吸附到小节线上的任何表情项目。请考虑这两个示例之间的区别：</p>
+<figure><img src="../../assets/CfjhUtJ6FR51Vdx5tsYL.png" alt="" width="238"><figcaption><p>在其后键入文本的力度记号</p></figcaption></figure>
+
+<figure><img src="../../assets/kz6d7TGzkh9fsKo1pJv2.png" alt="" width="234"><figcaption><p>带有独立表情项目的力度记号</p></figcaption></figure>
+
+<p>在前一种情况下，避开小节线会将文本推向左侧，力度记号看起来像是比预期更早生效。这就是为什么通常更倾向于使用单独的表情文本，而不是直接在力度记号之后添加文本的原因之一。</p>
+<p>当力度项目包含文本时，您还可以选择力度记号是否保持居中于音符下方、文本向左右延伸（这是默认设置），还是整个项目居中。这些选项可在<strong>属性</strong>面板的<strong>力度</strong>部分下<strong>显示更多</strong>中找到：</p>
+<figure><img src="../../assets/SbvvF4PiAaSa7sjHKZ86.png" alt="" width="292"><figcaption></figcaption></figure>
+
+<p>图标说明了这两个选项之间的区别。当力度记号附有一段表情文本时，此设置无效。</p>
+<h2 id="properties">属性</h2>
+<p>单个力度记号和力度变化线可通过<a href="../../basics/properties-panel.html"><strong>属性</strong>面板</a>编辑。要编辑乐谱范围的设置，请参见<a href="#style-1">样式</a>。</p>
+<h3 id="dynamics-properties">力度属性</h3>
+<p>对于力度记号，提供以下选项：</p>
+<ul>
+<li><strong>缩放</strong>：力度符号的大小，以相对于默认值的百分比表示</li>
+<li><strong>避开小节线</strong>：力度记号是否应自动向左或向右偏移，以避开与小节线的碰撞（参见<a href="#avoiding-barlines">避开小节线</a>）</li>
+<li><strong>声部分配</strong>：所选力度记号分配给哪个声部；这会影响其位置以及<a href="#dynamics-and-playback">播放</a>；默认是<strong>全部</strong>（参见<a href="#assigning-voices-to-dynamics">将力度记号分配给声部</a>）</li>
+<li><strong>位置</strong>：力度记号应位于谱表上方还是下方；默认的<strong>自动</strong>表示位置由声部分配决定</li>
+<li><strong>在谱表之间居中</strong>：在有多条谱表的乐器上，是否将力度记号在其所依附谱表和下一条谱表之间居中；默认的<strong>自动</strong>表示由声部分配决定（如果声部设置为<strong>乐器上的所有声部</strong>以外的任何值，力度记号将不居中）</li>
+</ul>
+<p>在<strong>显示更多</strong>下：</p>
+<ul>
+<li><strong>与符头对齐</strong>：如何对齐包含附加文本的力度项目；详情参见<a href="#text-as-part-of-a-dynamics-item">作为力度项目一部分的文本</a></li>
+<li><strong>边框</strong>：允许您在项目周围绘制方形或圆形边框。如果选择其中任一，将出现通常的附加边框设置。</li>
+</ul>
+<p>如果力度项目键入了附加文本，还会有一个<strong>文本</strong>标题，其中包含通常的文本属性（字体、样式、大小等）。这些设置只影响文本，不影响任何力度符号。</p>
+<h3 id="hairpin-properties">力度变化线属性</h3>
+<p>对于力度变化线，提供以下选项：</p>
+<h4 id="position">位置</h4>
+<ul>
+<li><strong>声部分配</strong>：所选力度记号分配给哪个声部；这会影响其位置以及<a href="#dynamics-and-playback">播放</a>；默认是<strong>全部</strong>（参见下文<a href="#assigning-voices-to-dynamics">将力度记号分配给声部</a>）</li>
+<li><strong>位置</strong>：力度记号应位于谱表上方还是下方；默认的<strong>自动</strong>表示位置由声部分配决定</li>
+<li><strong>与相邻力度记号的对齐</strong></li>
+<li><strong>吸附到前一个</strong>：如果勾选，那么如果力度变化线开头有力度记号且声部分配相同，力度变化线将紧接在该力度记号（及其吸附的任何表情文本）之后开始绘制，并与之垂直对齐</li>
+<li><strong>吸附到下一个</strong>：如果勾选，那么如果力度变化线末尾有力度记号且声部分配相同，力度变化线将绘制到该力度记号之前结束，并与之垂直对齐。</li>
+</ul>
+<h4 id="style">样式</h4>
+<div class="hint hint-info">
+<p>这些选项专门针对力度变化线。对于 <em>cresc.</em>/<em>dim.</em> 线，选项与其他文本线相同：参见<a href="other-lines.html#style-tab">线条属性</a>。</p>
+</div>
+<ul>
+<li><strong>无声圆</strong>：在力度变化线的尖端绘制一个小圆圈，以表示 <em>niente</em>（从无到有或从有到无）</li>
+<li><strong>允许斜向</strong>：允许力度变化线倾斜（参见<a href="#drawing-at-an-angle">以角度绘制</a>）</li>
+<li><strong>粗细</strong>：线条的粗细</li>
+<li><strong>高度</strong>：力度变化线开口端的高度（参见<a href="#adjusting-hairpin-height">调整力度变化线高度</a>）</li>
+<li><strong>高度（新系统）</strong>：当力度变化线跨越系统分隔时，在新系统开头开口的高度。</li>
+</ul>
+<h4 id="text">文本</h4>
+<p>这些设置与文本线相同：参见<a href="other-lines.html#text-tab">线条属性</a>。</p>
+<h2 id="style_1">样式</h2>
+<p><em>参见主章节</em><a href="../../customization/templates-and-styles.html"><em>模板和样式</em></a></p>
+<p><strong>格式 -&gt; 样式 -&gt; 力度与力度变化线</strong> 包含力度记号和力度变化线的默认定位、间距和外观选项。</p>
+<div class="hint hint-info">
+<p>您可以在 <strong>格式 → 样式 → 文本样式 → 表情</strong> 中编辑表情文本样式（它会影响表情文本项目，也会影响键入力度项目中的任何普通文本）。</p>
+</div>
+<h3 id="default-positions-of-dynamics-and-hairpins">力度记号和力度变化线的默认位置</h3>
+<p>参见<a href="#positioning-dynamics-and-hairpins">定位力度记号和力度变化线</a>。</p>
+<h3 id="dynamics">力度</h3>
+<ul>
+<li><strong>覆盖乐谱字体</strong>：力度记号通常取自音乐字体（在 <strong>格式 -&gt; 样式 -&gt; 乐谱 -&gt; 音乐符号字体</strong> 中指定）。如果您想<em>仅</em>为力度记号使用不同的字体，请勾选此框，然后从<strong>字体</strong>下拉菜单中选择所需字体</li>
+<li><strong>避开小节线</strong>：默认情况下是否偏移所有力度记号以避开小节线（参见<a href="#avoiding-barlines">避开小节线</a>）</li>
+<li><strong>缩放</strong>：力度符号的大小，以相对于默认值的百分比表示</li>
+<li><strong>上方/下方偏移</strong>：力度记号在谱表上方和下方的默认垂直位置</li>
+<li><strong>自动放置最小距离</strong>：力度记号与谱表之间，或与它和谱表之间项目的最小距离。</li>
+</ul>
+<div class="hint hint-info">
+<p>虽然力度记号看起来像文本，并且经常与文本一起使用，但最好将它们视为与其他音乐符号（谱号、符头等）一样的音乐符号，在任何给定的音乐字体中，它们都按与字体中其他符号相适应的特定尺寸设计。这就是为什么<strong>缩放</strong>设置不以点为单位表示，而以百分比表示，其中 100% 代表“它们被设计时的尺寸”。</p>
+</div>
+<h3 id="hairpins">力度变化线</h3>
+<ul>
+<li><strong>上方/下方偏移</strong>：力度变化线在谱表上方和下方的默认垂直位置</li>
+<li><strong>高度</strong>：力度变化线开口端的默认高度</li>
+<li><strong>继续高度</strong>：当力度变化线跨越系统分隔时，新系统开头开口的默认高度</li>
+<li><strong>自动放置、到力度记号的距离</strong>：力度变化线末端与力度记号之间的距离</li>
+<li><strong>线粗细</strong>：默认线粗细。</li>
+</ul>
+<h2 id="dynamics-playback-compatibility">力度播放兼容性</h2>
+<p>声部特定力度的支持因所选声音技术（例如 SoundFont、VST 或 Muse Sounds）以及乐器是<strong>单音符力度</strong>乐器（即能够在单个音符上改变力度的乐器，如小提琴或长笛）还是<strong>非单音符力度乐器</strong>（例如钢琴或打击乐器，这些乐器在音符初始起音后力度属性开始衰减）而异。</p>
+<p>在下表中，<strong>单音符力度</strong>乐器称为<strong>SND 乐器</strong>，而<strong>非单音符力度乐器</strong>称为<strong>非 SND 乐器</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>声音技术</th>
+<th>对单个声部/谱表的支持</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muse Sounds</td>
+<td>完全支持按声部和按谱表的力度。</td>
+</tr>
+<tr>
+<td>SoundFont (MS Basic)</td>
+<td>SND 和非 SND 乐器均支持单个声部的力度。只有非 SND 乐器支持单个谱表的力度。</td>
+</tr>
+<tr>
+<td>VST</td>
+<td>只有非 SND 乐器支持按声部和按谱表的力度。</td>
+</tr>
+</tbody>
+</table></article>
+  <nav class="prevnext"><a class="pn prev" href="breaths-and-pauses.html"><span>← 上一页</span>换气记号与停顿</a>
+<a class="pn next" href="grace-notes.html"><span>下一页 →</span>倚音</a></nav>
+  <footer class="footer">
+    <p>Powered by eyz2021 with Love</p>
+  </footer>
+</main>
+<script>window.LANG="zh";</script>
+<script>window.PAGE_DIR="notation/expressive-markings";</script>
+<script src="../../_static/search_index.js"></script>
+<script src="../../_static/app.js"></script>
+</body>
+</html>

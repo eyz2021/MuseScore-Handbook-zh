@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Implode and explode · MuseScore Handbook</title>
+<link rel="stylesheet" href="../../_static/style.css">
+</head>
+<body>
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+<aside class="sidebar">
+  <div class="brand"><a href="../../index.html">♪ MuseScore<br>Handbook</a></div>
+  <div class="searchbox">
+    <input id="search-input" type="search" placeholder="Search…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="nav"><div class="nav-section"><h3>English (US)</h3>
+<a class="nav-link " href="../../about-the-handbook.html">About the handbook</a>
+<a class="nav-link " href="../../index.html">MuseScore Studio Handbook</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../about-the-handbook/editing-the-handbook.html">Editing the handbook</a>
+<a class="nav-link " href="../../about-the-handbook/license.html">License</a>
+<a class="nav-link " href="../../about-the-handbook/style-guide.html">Style guide</a>
+<a class="nav-link " href="../../about-the-handbook/using-gitbook.html">Using GitBook</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../alternative-notation/custom-staff-types.html">Custom staff types</a>
+<a class="nav-link " href="../../alternative-notation/mensural-notation-and-mensurstrich.html">Mensural notation and Mensurstrich</a>
+<a class="nav-link " href="../../alternative-notation/slash-notation.html">Slash notation</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../appendix/all-keyboard-shortcuts.html">All keyboard shortcuts</a>
+<a class="nav-link " href="../../appendix/changes-for-mdl-percussion.html">Changes for MDL percussion</a>
+<a class="nav-link " href="../../appendix/command-line-usage.html">Command line usage</a>
+<a class="nav-link " href="../../appendix/glossary.html">Glossary</a>
+<a class="nav-link " href="../../appendix/music-fonts.html">Music fonts</a>
+<a class="nav-link " href="../../appendix/upgrade-from-musescore-3.x.html">Upgrade from MuseScore 3.x</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../basics/adding-and-removing-measures.html">Adding and removing measures</a>
+<a class="nav-link " href="../../basics/adjusting-elements-directly.html">Adjusting elements directly</a>
+<a class="nav-link " href="../../basics/alternative-note-input-methods.html">Alternative note input methods</a>
+<a class="nav-link " href="../../basics/copy-and-paste.html">Copy and paste</a>
+<a class="nav-link " href="../../basics/default-keyboard-shortcuts.html">Default keyboard shortcuts</a>
+<a class="nav-link " href="../../basics/editing-notes-and-rests.html">Editing notes and rests</a>
+<a class="nav-link " href="../../basics/entering-notes-and-rests.html">Entering notes and rests</a>
+<a class="nav-link " href="../../basics/input-by-duration-mode.html">Input by duration mode</a>
+<a class="nav-link " href="../../basics/parts.html">Parts</a>
+<a class="nav-link " href="../../basics/properties-panel.html">Properties panel</a>
+<a class="nav-link " href="../../basics/selecting-elements.html">Selecting elements</a>
+<a class="nav-link " href="../../basics/setting-up-your-score.html">Setting up your score</a>
+<a class="nav-link " href="../../basics/using-the-palettes.html">Using the palettes</a>
+<a class="nav-link " href="../../basics/working-with-multiple-voices.html">Working with multiple voices</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../customization/appearance.html">Appearance</a>
+<a class="nav-link " href="../../customization/keyboard-shortcuts.html">Keyboard shortcuts</a>
+<a class="nav-link " href="../../customization/language.html">Language</a>
+<a class="nav-link " href="../../customization/palettes.html">Palettes</a>
+<a class="nav-link " href="../../customization/plugins.html">Plugins</a>
+<a class="nav-link " href="../../customization/preferences.html">Preferences</a>
+<a class="nav-link " href="../../customization/templates-and-styles.html">Templates and styles</a>
+<a class="nav-link " href="../../customization/toolbars-and-windows.html">Toolbars and windows</a>
+<a class="nav-link " href="../../customization/workspaces.html">Workspaces</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../file-management/backup-and-recovered-files.html">Backup and recovered files</a>
+<a class="nav-link " href="../../file-management/file-export.html">File export</a>
+<a class="nav-link " href="../../file-management/opening-and-saving-scores.html">Opening and saving scores</a>
+<a class="nav-link " href="../../file-management/project-properties.html">Project properties</a>
+<a class="nav-link " href="../../file-management/publish-to-musescore.com.html">Publish to MuseScore.com</a>
+<a class="nav-link " href="../../file-management/share-on-audio.com.html">Share on Audio.com</a>
+<a class="nav-link " href="../../file-management/working-with-musicxml-files.html">Working with MusicXML files</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../formatting/page-layout-concepts.html">Page layout concepts</a>
+<a class="nav-link " href="../../formatting/pages-and-vertical-spacing.html">Pages and vertical spacing</a>
+<a class="nav-link " href="../../formatting/positioning-of-elements.html">Positioning of elements</a>
+<a class="nav-link " href="../../formatting/score-size-and-spacing.html">Score size and spacing</a>
+<a class="nav-link " href="../../formatting/systems-and-horizontal-spacing.html">Systems and horizontal spacing</a>
+<a class="nav-link " href="../../formatting/using-frames-for-additional-content.html">Using frames for additional content</a>
+<a class="nav-link " href="../../formatting/using-sections-for-multiple-movements-or-songs.html">Using sections for multiple movements or songs</a>
+<a class="nav-link " href="../../formatting/working-with-images.html">Working with images</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar.html">Guitar</a>
+<a class="nav-link " href="../../idiomatic-notation/harp.html">Harp</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard.html">Keyboard</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion.html">Percussion</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar/alternate-string-tunings.html">Alternate string tunings</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/applying-capos.html">Applying capos</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/creating-a-tablature-staff.html">Creating a tablature staff</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/customizing-a-tablature-staff.html">Customizing a tablature staff</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">Entering and editing tablature notation</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagram-legend.html">Fretboard diagram legend</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagrams.html">Fretboard diagrams</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-bends.html">Guitar bends &amp; dives</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-techniques.html">Guitar techniques</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/keyboard/accordion-notation.html">Accordion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/cross-staff-notation.html">Cross-staff notation</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/pedal.html">Pedal</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/percussion/customizing-the-percussion-panel.html">Customizing the percussion panel</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/inputting-percussion-notation.html">Inputting percussion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/other-percussion-notation.html">Other percussion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/percussion-kit-customization.html">Percussion kit customization</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../introduction/create-your-first-score.html">Create your first score</a>
+<a class="nav-link " href="../../introduction/download-and-installation.html">Download and installation</a>
+<a class="nav-link " href="../../introduction/upgrading-from-earlier-versions.html">Upgrading from earlier versions</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../navigation/accessibility.html">Accessibility</a>
+<a class="nav-link " href="../../navigation/braille.html">Braille</a>
+<a class="nav-link " href="../../navigation/navigating-your-score.html">Navigating your score</a>
+<a class="nav-link " href="../../navigation/the-user-interface.html">The user interface</a>
+<a class="nav-link " href="../../navigation/timeline.html">Timeline</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../expressive-markings.html">Expressive markings</a>
+<a class="nav-link " href="../instruments-staves-and-systems.html">Instruments, staves, and systems</a>
+<a class="nav-link " href="../pitch.html">Pitch</a>
+<a class="nav-link " href="../repeats.html">Repeats</a>
+<a class="nav-link " href="../rhythm-meter-and-measures.html">Rhythm, meter, and measures</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="../expressive-markings/arpeggios-and-glissandos.html">Arpeggios and glissandos</a>
+<a class="nav-link " href="../expressive-markings/articulations.html">Articulations</a>
+<a class="nav-link " href="../expressive-markings/breaths-and-pauses.html">Breaths and pauses</a>
+<a class="nav-link " href="../expressive-markings/dynamics-and-hairpins.html">Dynamics and hairpins</a>
+<a class="nav-link " href="../expressive-markings/grace-notes.html">Grace notes</a>
+<a class="nav-link " href="../expressive-markings/laissez-vibrer-ties.html">Laissez vibrer ties</a>
+<a class="nav-link " href="../expressive-markings/ornaments.html">Ornaments</a>
+<a class="nav-link " href="../expressive-markings/other-lines.html">Other lines</a>
+<a class="nav-link " href="../expressive-markings/other-symbols.html">Other symbols</a>
+<a class="nav-link " href="../expressive-markings/slurs-and-ties.html">Slurs and ties</a>
+<a class="nav-link " href="../expressive-markings/tremolos-and-rolls.html">Tremolos and rolls</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="brackets.html">Brackets</a>
+<a class="nav-link active" href="implode-and-explode.html">Implode and explode</a>
+<a class="nav-link " href="instruments-and-system-markings.html">Instruments and system markings</a>
+<a class="nav-link " href="mid-score-instrument-changes.html">Mid-score instrument changes</a>
+<a class="nav-link " href="showing-staves-only-where-needed.html">Showing staves only where needed</a>
+<a class="nav-link " href="staff-type-change.html">Staff type change</a>
+<a class="nav-link " href="staff-part-properties.html">Staff/Part properties</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../pitch/ambitus.html">Ambitus</a>
+<a class="nav-link " href="../pitch/clefs.html">Clefs</a>
+<a class="nav-link " href="../pitch/key-signatures.html">Key signatures</a>
+<a class="nav-link " href="../pitch/noteheads.html">Noteheads</a>
+<a class="nav-link " href="../pitch/octave-lines.html">Octave lines</a>
+<a class="nav-link " href="../pitch/respell-pitches.html">Respell pitches</a>
+<a class="nav-link " href="../pitch/transposition.html">Transposition</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../repeats/changes-and-courtesies-at-repeats-and-jumps.html">Changes and courtesies at repeats and jumps</a>
+<a class="nav-link " href="../repeats/items-across-repeats-and-jumps.html">Items across repeats and jumps</a>
+<a class="nav-link " href="../repeats/jumps-and-markers.html">Jumps and markers</a>
+<a class="nav-link " href="../repeats/measure-and-multimeasure-repeats.html">Measure and multimeasure repeats</a>
+<a class="nav-link " href="../repeats/repeat-signs.html">Repeat signs</a>
+<a class="nav-link " href="../repeats/voltas.html">Voltas</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../rhythm-meter-and-measures/barlines.html">Barlines</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/beams.html">Beams</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-and-multimeasure-rests.html">Measure and multimeasure rests</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-numbering.html">Measure numbering</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-properties.html">Measure properties</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/pickup-and-non-metered-measures.html">Pickup and non-metered measures</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/regroup-rhythms.html">Regroup rhythms</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/stems-and-flags.html">Stems and flags</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/time-signatures.html">Time signatures</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/tuplets.html">Tuplets</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/mixer.html">Mixer</a>
+<a class="nav-link " href="../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../sound-and-playback/playback-controls.html">Playback controls</a>
+<a class="nav-link " href="../../sound-and-playback/sound-flags.html">Sound flags</a>
+<a class="nav-link " href="../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../sound-and-playback/swing-playback.html">Swing playback</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-midi.html">Working with MIDI</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-vst-and-vsti.html">Working with VST and VSTi</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds/online-sounds.html">Online sounds</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../support/getting-help.html">Getting help</a>
+<a class="nav-link " href="../../support/revert-to-factory-settings.html">Revert to factory settings</a>
+<a class="nav-link " href="../../support/troubleshooting.html">Troubleshooting</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../text/chord-symbols.html">Chord symbols</a>
+<a class="nav-link " href="../../text/entering-and-editing-text.html">Entering and editing text</a>
+<a class="nav-link " href="../../text/figured-bass.html">Figured bass</a>
+<a class="nav-link " href="../../text/fingering.html">Fingering</a>
+<a class="nav-link " href="../../text/formatting-text.html">Formatting text</a>
+<a class="nav-link " href="../../text/header-and-footer.html">Header and footer</a>
+<a class="nav-link " href="../../text/lyrics.html">Lyrics</a>
+<a class="nav-link " href="../../text/rehearsal-marks.html">Rehearsal marks</a>
+<a class="nav-link " href="../../text/staff-system-and-expression-text.html">Staff, system, and expression text</a>
+<a class="nav-link " href="../../text/tempo-markings.html">Tempo markings</a>
+<a class="nav-link " href="../../text/text-blocks.html">Text blocks</a></div></details>
+<details open><summary>Video</summary><div class="sub"><a class="nav-link " href="../../video/exporting-video.html">Exporting video</a>
+<a class="nav-link " href="../../video/installing-ffmpeg.html">Installing FFmpeg</a></div></details>
+</div>
+<div class="nav-section"><h3>English (UK)</h3>
+<a class="nav-link " href="../../en_gb/about-the-handbook.html">About the handbook</a>
+<a class="nav-link " href="../../en_gb/index.html">MuseScore Studio Handbook</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../en_gb/about-the-handbook/editing-the-handbook.html">Editing the handbook</a>
+<a class="nav-link " href="../../en_gb/about-the-handbook/license.html">Licence</a>
+<a class="nav-link " href="../../en_gb/about-the-handbook/style-guide.html">Style guide</a>
+<a class="nav-link " href="../../en_gb/about-the-handbook/using-gitbook.html">Using GitBook</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../en_gb/alternative-notation/custom-staff-types.html">Custom stave types</a>
+<a class="nav-link " href="../../en_gb/alternative-notation/mensural-notation-and-mensurstrich.html">Mensural notation and Mensurstrich</a>
+<a class="nav-link " href="../../en_gb/alternative-notation/slash-notation.html">Slash notation</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../en_gb/appendix/all-keyboard-shortcuts.html">All keyboard shortcuts</a>
+<a class="nav-link " href="../../en_gb/appendix/changes-for-mdl-percussion.html">Changes for MDL percussion</a>
+<a class="nav-link " href="../../en_gb/appendix/command-line-usage.html">Command line usage</a>
+<a class="nav-link " href="../../en_gb/appendix/glossary.html">Glossary</a>
+<a class="nav-link " href="../../en_gb/appendix/music-fonts.html">Music fonts</a>
+<a class="nav-link " href="../../en_gb/appendix/upgrade-from-musescore-3.x.html">Upgrade from MuseScore 3.x</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../en_gb/basics/adding-and-removing-measures.html">Adding and removing bars</a>
+<a class="nav-link " href="../../en_gb/basics/adjusting-elements-directly.html">Adjusting elements directly</a>
+<a class="nav-link " href="../../en_gb/basics/alternative-note-input-methods.html">Alternative note input methods</a>
+<a class="nav-link " href="../../en_gb/basics/copy-and-paste.html">Copy and paste</a>
+<a class="nav-link " href="../../en_gb/basics/default-keyboard-shortcuts.html">Default keyboard shortcuts</a>
+<a class="nav-link " href="../../en_gb/basics/editing-notes-and-rests.html">Editing notes and rests</a>
+<a class="nav-link " href="../../en_gb/basics/entering-notes-and-rests.html">Entering notes and rests</a>
+<a class="nav-link " href="../../en_gb/basics/input-by-duration-mode.html">Input by duration mode</a>
+<a class="nav-link " href="../../en_gb/basics/parts.html">Parts</a>
+<a class="nav-link " href="../../en_gb/basics/properties-panel.html">Properties panel</a>
+<a class="nav-link " href="../../en_gb/basics/selecting-elements.html">Selecting elements</a>
+<a class="nav-link " href="../../en_gb/basics/setting-up-your-score.html">Setting up your score</a>
+<a class="nav-link " href="../../en_gb/basics/using-the-palettes.html">Using the palettes</a>
+<a class="nav-link " href="../../en_gb/basics/working-with-multiple-voices.html">Working with multiple voices</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../en_gb/customization/appearance.html">Appearance</a>
+<a class="nav-link " href="../../en_gb/customization/keyboard-shortcuts.html">Keyboard shortcuts</a>
+<a class="nav-link " href="../../en_gb/customization/language.html">Language</a>
+<a class="nav-link " href="../../en_gb/customization/palettes.html">Palettes</a>
+<a class="nav-link " href="../../en_gb/customization/plugins.html">Plugins</a>
+<a class="nav-link " href="../../en_gb/customization/preferences.html">Preferences</a>
+<a class="nav-link " href="../../en_gb/customization/templates-and-styles.html">Templates and styles</a>
+<a class="nav-link " href="../../en_gb/customization/toolbars-and-windows.html">Toolbars and windows</a>
+<a class="nav-link " href="../../en_gb/customization/workspaces.html">Workspaces</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../en_gb/file-management/backup-and-recovered-files.html">Backup and recovered files</a>
+<a class="nav-link " href="../../en_gb/file-management/file-export.html">File export</a>
+<a class="nav-link " href="../../en_gb/file-management/opening-and-saving-scores.html">Opening and saving scores</a>
+<a class="nav-link " href="../../en_gb/file-management/project-properties.html">Project properties</a>
+<a class="nav-link " href="../../en_gb/file-management/publish-to-musescore.com.html">Publish to MuseScore.com</a>
+<a class="nav-link " href="../../en_gb/file-management/share-on-audio.com.html">Share on Audio.com</a>
+<a class="nav-link " href="../../en_gb/file-management/working-with-musicxml-files.html">Working with MusicXML files</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../en_gb/formatting/page-layout-concepts.html">Page layout concepts</a>
+<a class="nav-link " href="../../en_gb/formatting/pages-and-vertical-spacing.html">Pages and vertical spacing</a>
+<a class="nav-link " href="../../en_gb/formatting/positioning-of-elements.html">Positioning of elements</a>
+<a class="nav-link " href="../../en_gb/formatting/score-size-and-spacing.html">Score size and spacing</a>
+<a class="nav-link " href="../../en_gb/formatting/systems-and-horizontal-spacing.html">Systems and horizontal spacing</a>
+<a class="nav-link " href="../../en_gb/formatting/using-frames-for-additional-content.html">Using frames for additional content</a>
+<a class="nav-link " href="../../en_gb/formatting/using-sections-for-multiple-movements-or-songs.html">Using sections for multiple movements or songs</a>
+<a class="nav-link " href="../../en_gb/formatting/working-with-images.html">Working with images</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../en_gb/idiomatic-notation/guitar.html">Guitar</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/harp.html">Harp</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/keyboard.html">Keyboard</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/percussion.html">Percussion</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/alternate-string-tunings.html">Alternate string tunings</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/applying-capos.html">Applying capos</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/creating-a-tablature-staff.html">Creating a tablature stave</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/customizing-a-tablature-staff.html">Customising a tablature stave</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">Entering and editing tablature notation</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/fretboard-diagram-legend.html">Fretboard diagram legend</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/fretboard-diagrams.html">Fretboard diagrams</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/guitar-bends.html">Guitar bends</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/guitar/guitar-techniques.html">Guitar techniques</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../en_gb/idiomatic-notation/keyboard/accordion-notation.html">Accordion notation</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/keyboard/cross-staff-notation.html">Cross-stave notation</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/keyboard/pedal.html">Pedal</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../en_gb/idiomatic-notation/percussion/customizing-the-percussion-panel.html">Customising the percussion panel</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/percussion/inputting-percussion-notation.html">Inputting percussion notation</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/percussion/other-percussion-notation.html">Other percussion notation</a>
+<a class="nav-link " href="../../en_gb/idiomatic-notation/percussion/percussion-kit-customization.html">Percussion kit customisation</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../en_gb/introduction/create-your-first-score.html">Create your first score</a>
+<a class="nav-link " href="../../en_gb/introduction/download-and-installation.html">Download and installation</a>
+<a class="nav-link " href="../../en_gb/introduction/upgrading-from-earlier-versions.html">Upgrading from earlier versions</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../en_gb/navigation/accessibility.html">Accessibility</a>
+<a class="nav-link " href="../../en_gb/navigation/braille.html">Braille</a>
+<a class="nav-link " href="../../en_gb/navigation/navigating-your-score.html">Navigating your score</a>
+<a class="nav-link " href="../../en_gb/navigation/the-user-interface.html">The user interface</a>
+<a class="nav-link " href="../../en_gb/navigation/timeline.html">Timeline</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/expressive-markings.html">Expressive markings</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems.html">Instruments, staves, and systems</a>
+<a class="nav-link " href="../../en_gb/notation/pitch.html">Pitch</a>
+<a class="nav-link " href="../../en_gb/notation/repeats.html">Repeats</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures.html">Rhythm, meter, and bars</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/expressive-markings/arpeggios-and-glissandos.html">Arpeggios and glissandos</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/articulations.html">Articulations</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/breaths-and-pauses.html">Breaths and pauses</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/dynamics-and-hairpins.html">Dynamics and hairpins</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/grace-notes.html">Grace notes</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/laissez-vibrer-ties.html">Laissez vibrer ties</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/ornaments.html">Ornaments</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/other-lines.html">Other lines</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/other-symbols.html">Other symbols</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/slurs-and-ties.html">Slurs and ties</a>
+<a class="nav-link " href="../../en_gb/notation/expressive-markings/tremolos-and-rolls.html">Tremolos and rolls</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/brackets.html">Brackets</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/implode-and-explode.html">Implode and explode</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/instruments-and-system-markings.html">Instruments and system markings</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/mid-score-instrument-changes.html">Mid-score instrument changes</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/showing-staves-only-where-needed.html">Showing staves only where needed</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/staff-type-change.html">Stave type change</a>
+<a class="nav-link " href="../../en_gb/notation/instruments-staves-and-systems/staff-part-properties.html">Stave/Part properties</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/pitch/ambitus.html">Ambitus</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/clefs.html">Clefs</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/key-signatures.html">Key signatures</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/noteheads.html">Noteheads</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/octave-lines.html">Octave lines</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/respell-pitches.html">Respell pitches</a>
+<a class="nav-link " href="../../en_gb/notation/pitch/transposition.html">Transposition</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/repeats/measure-and-multimeasure-repeats.html">Bar and multibar repeats</a>
+<a class="nav-link " href="../../en_gb/notation/repeats/changes-and-courtesies-at-repeats-and-jumps.html">Changes and courtesies at repeats and jumps</a>
+<a class="nav-link " href="../../en_gb/notation/repeats/items-across-repeats-and-jumps.html">Items across repeats and jumps</a>
+<a class="nav-link " href="../../en_gb/notation/repeats/jumps-and-markers.html">Jumps and markers</a>
+<a class="nav-link " href="../../en_gb/notation/repeats/repeat-signs.html">Repeat signs</a>
+<a class="nav-link " href="../../en_gb/notation/repeats/voltas.html">Voltas</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/pickup-and-non-metered-measures.html">Anacrusis and non-metered bars</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/measure-and-multimeasure-rests.html">Bar and multibar rests</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/measure-numbering.html">Bar numbering</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/measure-properties.html">Bar properties</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/barlines.html">Barlines</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/beams.html">Beams</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/regroup-rhythms.html">Regroup rhythms</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/stems-and-flags.html">Stems and flags</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/time-signatures.html">Time signatures</a>
+<a class="nav-link " href="../../en_gb/notation/rhythm-meter-and-measures/tuplets.html">Tuplets</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../en_gb/sound-and-playback/mixer.html">Mixer</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/playback-controls.html">Playback controls</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/sound-flags.html">Sound flags</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/swing-playback.html">Swing playback</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/working-with-midi.html">Working with MIDI</a>
+<a class="nav-link " href="../../en_gb/sound-and-playback/working-with-vst-and-vsti.html">Working with VST and VSTi</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../en_gb/sound-and-playback/musesounds/online-sounds.html">Online sounds</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../en_gb/support/getting-help.html">Getting help</a>
+<a class="nav-link " href="../../en_gb/support/revert-to-factory-settings.html">Revert to factory settings</a>
+<a class="nav-link " href="../../en_gb/support/troubleshooting.html">Troubleshooting</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../en_gb/text/chord-symbols.html">Chord symbols</a>
+<a class="nav-link " href="../../en_gb/text/entering-and-editing-text.html">Entering and editing text</a>
+<a class="nav-link " href="../../en_gb/text/figured-bass.html">Figured bass</a>
+<a class="nav-link " href="../../en_gb/text/fingering.html">Fingering</a>
+<a class="nav-link " href="../../en_gb/text/formatting-text.html">Formatting text</a>
+<a class="nav-link " href="../../en_gb/text/header-and-footer.html">Header and footer</a>
+<a class="nav-link " href="../../en_gb/text/lyrics.html">Lyrics</a>
+<a class="nav-link " href="../../en_gb/text/rehearsal-marks.html">Rehearsal marks</a>
+<a class="nav-link " href="../../en_gb/text/staff-system-and-expression-text.html">Stave, system, and expression text</a>
+<a class="nav-link " href="../../en_gb/text/tempo-markings.html">Tempo markings</a>
+<a class="nav-link " href="../../en_gb/text/text-blocks.html">Text blocks</a></div></details>
+</div></nav>
+</aside>
+<label for="sidebar-toggle" class="backdrop"></label>
+<main class="content">
+  <header class="topbar">
+    <label for="sidebar-toggle" class="menu-btn">☰</label>
+    <div class="crumb">MuseScore Studio Handbook</div>
+    <a class="lang-btn" href="../../zh/notation/instruments-staves-and-systems/implode-and-explode.html">中文</a>
+  </header>
+  <article class="article"><h1 id="implode-and-explode">Implode and explode</h1>
+<h2 id="overview">Overview</h2>
+<p>The Implode command is used to take multiple voices or staves and combine them into one. The Explode command, its opposite, is used to take a single voice or staff and decombine it into several. These commands can be very useful when arranging, and can also save time when inputting.</p>
+<h2 id="implode">Implode</h2>
+<p>The Implode command allows you to do <em>either</em> of the following:</p>
+<ul>
+<li>Combine multiple voices on the same staff into one voice</li>
+<li>Combine multiple staves containing single voices into separate voices on one staff.</li>
+</ul>
+<h3 id="combine-notes-from-multiple-voices-in-a-single-staff-into-one-voice">Combine notes from multiple voices in a single staff into one voice</h3>
+<ol>
+<li>Select a range of measures in a single staff, where there are multiple voices</li>
+<li>From the menu bar, select <strong>Tools -&gt; Implode</strong>.</li>
+</ol>
+<figure><img src="../../assets/JZBgnGcpaD6TsioFbQpe.png" alt="" width="476"><figcaption><p>Imploding two voices to a single voice</p></figcaption></figure>
+
+<p>All selected notes in the staff are now combined in voice 1. For this to work, all simultaneous notes in different voices need to have the same duration.</p>
+<h3 id="combine-notes-from-multiple-staves-into-separate-voices-on-one-staff">Combine notes from multiple staves into separate voices on one staff</h3>
+<ol>
+<li>Ensure that there is only one voice in each staff to be imploded</li>
+<li>Select a range of measures in the top staff and extend this selection downwards to include up to four staves</li>
+<li>From the menu bar, select <strong>Tools -&gt; Implode</strong>.</li>
+</ol>
+<figure><img src="../../assets/k8OQPBz6zwek934yTg7q.png" alt="" width="476"><figcaption><p>Imploding two staves to two voices</p></figcaption></figure>
+
+<p>Imploding multiple staves always works <em>upwards</em>, i.e. the topmost staff of the selection is the destination of the combined result. The notes from the uppermost staff of the selection that contains any music will go to voice 1, those from the next staff down to voice 2, and so on. Empty staves are skipped. The lower staves are not automatically cleared.</p>
+<h2 id="explode">Explode</h2>
+<p>Explode allows you to do <em>either</em> of the following:</p>
+<ul>
+<li>Separate multiple voices on one staff into single voices each on their own staff</li>
+<li>Separate a passage of chords in one voice into single notes on multiple staves</li>
+</ul>
+<p>The two cannot be mixed in a single operation. If the passage contains multiple voices at any point, this will take precedence and it will be split into voices, but chords will remain intact.</p>
+<p>Unlike Implode, Explode will only work on whole measures. If you select part of a measure, the entire measure will be processed.</p>
+<p>This result will be notated on multiple staves, so there are some things to be aware of:</p>
+<ul>
+<li>Exploding always works <em>downwards</em>, so the result will be notated starting on the stave containing the selected passage and on the staves directly below it. You may therefore need to move the passage to the topmost destination stave before exploding it, or may need to create extra staves to make space, because material may be lost if there are not enough staves available</li>
+<li>Any existing music on destination staves will be overwritten.</li>
+</ul>
+<h3 id="separate-multiple-voices-on-one-staff-into-single-voices">Separate multiple voices on one staff into single voices</h3>
+<p>To separate multiple voices on one staff into single voices each on their own staff:</p>
+<ol>
+<li>Select the passage you want to explode</li>
+<li>If you wish, extend the selection downwards to include the destination staves desired</li>
+<li>From the menu bar, select <strong>Tools -&gt; Explode</strong>.</li>
+</ol>
+<figure><img src="../../assets/Bv6tnwFgcHy35EvRkhLs.png" alt="" width="476"><figcaption><p>Exploding two voices to two staves</p></figcaption></figure>
+
+<p>Step 2 is usually not necessary. If you select only the passage on the source stave, MuseScore will determine how many staves are required, which is equal to the number of voices in the passage which contain notes. Empty voices will be skipped.</p>
+<p>If you do extend the selection, but select fewer staves than are required (or, if there are not enough staves available in the score), then MuseScore will only transfer as many voices as it can move to the available staves. For example, exploding a 3-voice passage onto two staves will move voice 2 to the lower stave, and then stop, leaving voices 1 and 3 on the upper stave.</p>
+<figure><img src="../../assets/sQ24UxFWM19rrn797RbC.png" alt="" width="478"><figcaption><p>Exploding three voices to two staves</p></figcaption></figure>
+
+<p>If you explicitly select more staves than are required, the extra lower staves will be left untouched.</p>
+<h3 id="separate-a-passage-of-chords-in-one-voice-into-single-notes">Separate a passage of chords in one voice into single notes</h3>
+<p>To separate a passage of chords in one voice in to single notes on multiple staves:</p>
+<ol>
+<li>Select the passage you want to explode, ensuring it is all in a single voice throughout</li>
+<li>If you wish, extend the selection downwards to include the destination staves desired</li>
+<li>From the menu bar, select <strong>Tools -&gt; Explode</strong>.</li>
+</ol>
+<figure><img src="../../assets/d7OWXdOX6YbxUNvsyoYQ.png" alt="" width="475"><figcaption><p>Exploding three-note chords to three staves</p></figcaption></figure>
+
+<p>If you select the passage on the source stave only, MuseScore will determine how many staves are required, which is equal to the largest number of notes in any single chord in the passage. If you explicitly select a range of staves, <em>all</em> the staves will receive notes.</p>
+<p>MuseScore explodes the chords one by one, following this logic:</p>
+<ul>
+<li>If the number of notes in the chord matches the number of destination staves, the highest note goes to the topmost stave, the second highest note goes to the next stave down, and so on</li>
+<li>If the number of notes in the chord is greater than the number of destination staves, the chord is split as above, but once the staves run out, any extra notes are <em>lost</em></li>
+<li>If the number of notes in the chord is less than the number of destination staves, then:</li>
+<li>if the number of staves is an exact multiple of the number of notes, each note will be repeated an equal number of times; for example, exploding a two-note chord onto four staves, the upper note will go to the top two staves and the lower note will go to the bottom two staves</li>
+<li>if the number of staves is not an exact multiple of the number of notes, the notes will be distributed one by one, and then the <em>lowest</em> note will be repeated on the remaining staves.</li>
+</ul>
+<figure><img src="../../assets/Si4ZDkaxCutt7CRAoVc7.png" alt="" width="478"><figcaption><p>Exploding chords with different numbers of notes</p></figcaption></figure></article>
+  <nav class="prevnext"><a class="pn prev" href="brackets.html"><span>← Previous</span>Brackets</a>
+<a class="pn next" href="instruments-and-system-markings.html"><span>Next →</span>Instruments and system markings</a></nav>
+  <footer class="footer">
+    <p>Powered by eyz2021 with Love</p>
+  </footer>
+</main>
+<script>window.LANG="en";</script>
+<script>window.PAGE_DIR="notation/instruments-staves-and-systems";</script>
+<script src="../../_static/search_index.js"></script>
+<script src="../../_static/app.js"></script>
+</body>
+</html>

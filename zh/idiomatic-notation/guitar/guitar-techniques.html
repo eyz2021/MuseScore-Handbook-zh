@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>吉他技巧 · MuseScore Handbook</title>
+<link rel="stylesheet" href="../../_static/style.css">
+</head>
+<body>
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+<aside class="sidebar">
+  <div class="brand"><a href="../../index.html">♪ MuseScore<br>Handbook</a></div>
+  <div class="searchbox">
+    <input id="search-input" type="search" placeholder="搜索文档…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="nav"><div class="nav-section"><h3>目录</h3>
+<a class="nav-link " href="../../index.html">MuseScore Studio 使用手册</a>
+<a class="nav-link " href="../../about-the-handbook.html">关于本手册</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../about-the-handbook/using-gitbook.html">使用 GitBook</a>
+<a class="nav-link " href="../../about-the-handbook/style-guide.html">样式指南</a>
+<a class="nav-link " href="../../about-the-handbook/editing-the-handbook.html">编辑本手册</a>
+<a class="nav-link " href="../../about-the-handbook/license.html">许可证</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../alternative-notation/slash-notation.html">斜线记谱</a>
+<a class="nav-link " href="../../alternative-notation/mensural-notation-and-mensurstrich.html">有量记谱与 Mensurstrich</a>
+<a class="nav-link " href="../../alternative-notation/custom-staff-types.html">自定义谱表类型</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../appendix/changes-for-mdl-percussion.html">MDL 打击乐变更</a>
+<a class="nav-link " href="../../appendix/upgrade-from-musescore-3.x.html">从 MuseScore 3.x 升级</a>
+<a class="nav-link " href="../../appendix/all-keyboard-shortcuts.html">全部键盘快捷键</a>
+<a class="nav-link " href="../../appendix/command-line-usage.html">命令行用法</a>
+<a class="nav-link " href="../../appendix/glossary.html">术语表</a>
+<a class="nav-link " href="../../appendix/music-fonts.html">音乐字体</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../basics/working-with-multiple-voices.html">使用多个声部</a>
+<a class="nav-link " href="../../basics/using-the-palettes.html">使用面板</a>
+<a class="nav-link " href="../../basics/alternative-note-input-methods.html">其他音符输入方法</a>
+<a class="nav-link " href="../../basics/parts.html">分谱</a>
+<a class="nav-link " href="../../basics/copy-and-paste.html">复制与粘贴</a>
+<a class="nav-link " href="../../basics/properties-panel.html">属性面板</a>
+<a class="nav-link " href="../../basics/input-by-duration-mode.html">按时值输入模式</a>
+<a class="nav-link " href="../../basics/setting-up-your-score.html">新建乐谱</a>
+<a class="nav-link " href="../../basics/adding-and-removing-measures.html">添加与删除小节</a>
+<a class="nav-link " href="../../basics/adjusting-elements-directly.html">直接调整元素</a>
+<a class="nav-link " href="../../basics/editing-notes-and-rests.html">编辑音符与休止符</a>
+<a class="nav-link " href="../../basics/entering-notes-and-rests.html">输入音符与休止符</a>
+<a class="nav-link " href="../../basics/selecting-elements.html">选择元素</a>
+<a class="nav-link " href="../../basics/default-keyboard-shortcuts.html">默认键盘快捷键</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../customization/preferences.html">偏好设置</a>
+<a class="nav-link " href="../../customization/appearance.html">外观</a>
+<a class="nav-link " href="../../customization/workspaces.html">工作区</a>
+<a class="nav-link " href="../../customization/toolbars-and-windows.html">工具栏与窗口</a>
+<a class="nav-link " href="../../customization/plugins.html">插件</a>
+<a class="nav-link " href="../../customization/templates-and-styles.html">模板与样式</a>
+<a class="nav-link " href="../../customization/language.html">语言</a>
+<a class="nav-link " href="../../customization/keyboard-shortcuts.html">键盘快捷键</a>
+<a class="nav-link " href="../../customization/palettes.html">面板</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../file-management/working-with-musicxml-files.html">使用 MusicXML 文件</a>
+<a class="nav-link " href="../../file-management/share-on-audio.com.html">分享到 Audio.com</a>
+<a class="nav-link " href="../../file-management/publish-to-musescore.com.html">发布到 MuseScore.com</a>
+<a class="nav-link " href="../../file-management/backup-and-recovered-files.html">备份与恢复文件</a>
+<a class="nav-link " href="../../file-management/file-export.html">导出文件</a>
+<a class="nav-link " href="../../file-management/opening-and-saving-scores.html">打开与保存乐谱</a>
+<a class="nav-link " href="../../file-management/project-properties.html">项目属性</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../formatting/score-size-and-spacing.html">乐谱大小和间距</a>
+<a class="nav-link " href="../../formatting/using-frames-for-additional-content.html">使用框架添加额外内容</a>
+<a class="nav-link " href="../../formatting/using-sections-for-multiple-movements-or-songs.html">使用章节进行多乐章或多首歌曲</a>
+<a class="nav-link " href="../../formatting/positioning-of-elements.html">元素定位</a>
+<a class="nav-link " href="../../formatting/working-with-images.html">处理图像</a>
+<a class="nav-link " href="../../formatting/systems-and-horizontal-spacing.html">系统和水平间距</a>
+<a class="nav-link " href="../../formatting/pages-and-vertical-spacing.html">页面和垂直间距</a>
+<a class="nav-link " href="../../formatting/page-layout-concepts.html">页面排版概念</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../guitar.html">吉他</a>
+<a class="nav-link " href="../percussion.html">打击乐</a>
+<a class="nav-link " href="../harp.html">竖琴</a>
+<a class="nav-link " href="../keyboard.html">键盘</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="creating-a-tablature-staff.html">创建吉他谱（TAB）谱表</a>
+<a class="nav-link active" href="guitar-techniques.html">吉他技巧</a>
+<a class="nav-link " href="guitar-bends.html">吉他推弦与下压</a>
+<a class="nav-link " href="fretboard-diagrams.html">品位图</a>
+<a class="nav-link " href="fretboard-diagram-legend.html">品位图图例</a>
+<a class="nav-link " href="applying-capos.html">应用变调夹</a>
+<a class="nav-link " href="alternate-string-tunings.html">替代调弦</a>
+<a class="nav-link " href="customizing-a-tablature-staff.html">自定义吉他谱谱表</a>
+<a class="nav-link " href="entering-and-editing-tablature-notation.html">输入与编辑吉他谱记谱</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../keyboard/accordion-notation.html">手风琴记谱</a>
+<a class="nav-link " href="../keyboard/cross-staff-notation.html">跨谱表记谱</a>
+<a class="nav-link " href="../keyboard/pedal.html">踏板</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../percussion/other-percussion-notation.html">其他打击乐记谱</a>
+<a class="nav-link " href="../percussion/percussion-kit-customization.html">打击乐套件自定义</a>
+<a class="nav-link " href="../percussion/customizing-the-percussion-panel.html">自定义打击乐面板</a>
+<a class="nav-link " href="../percussion/inputting-percussion-notation.html">输入打击乐记谱</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../introduction/download-and-installation.html">下载与安装</a>
+<a class="nav-link " href="../../introduction/upgrading-from-earlier-versions.html">从早期版本升级</a>
+<a class="nav-link " href="../../introduction/create-your-first-score.html">创建你的第一份乐谱</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../navigation/accessibility.html">无障碍功能</a>
+<a class="nav-link " href="../../navigation/timeline.html">时间线</a>
+<a class="nav-link " href="../../navigation/navigating-your-score.html">浏览乐谱</a>
+<a class="nav-link " href="../../navigation/the-user-interface.html">用户界面</a>
+<a class="nav-link " href="../../navigation/braille.html">盲文</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../../notation/instruments-staves-and-systems.html">乐器、谱表和系统</a>
+<a class="nav-link " href="../../notation/repeats.html">反复</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures.html">节奏、拍号与小节</a>
+<a class="nav-link " href="../../notation/expressive-markings.html">表情记号</a>
+<a class="nav-link " href="../../notation/pitch.html">音高</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="../../notation/expressive-markings/grace-notes.html">倚音</a>
+<a class="nav-link " href="../../notation/expressive-markings/other-symbols.html">其他符号</a>
+<a class="nav-link " href="../../notation/expressive-markings/other-lines.html">其他线条</a>
+<a class="nav-link " href="../../notation/expressive-markings/dynamics-and-hairpins.html">力度记号与力度变化线</a>
+<a class="nav-link " href="../../notation/expressive-markings/breaths-and-pauses.html">换气记号与停顿</a>
+<a class="nav-link " href="../../notation/expressive-markings/articulations.html">演奏记号</a>
+<a class="nav-link " href="../../notation/expressive-markings/arpeggios-and-glissandos.html">琶音与滑音</a>
+<a class="nav-link " href="../../notation/expressive-markings/laissez-vibrer-ties.html">自由延长延音线</a>
+<a class="nav-link " href="../../notation/expressive-markings/ornaments.html">装饰音</a>
+<a class="nav-link " href="../../notation/expressive-markings/slurs-and-ties.html">连音线与延音线</a>
+<a class="nav-link " href="../../notation/expressive-markings/tremolos-and-rolls.html">震音与滚奏</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="../../notation/instruments-staves-and-systems/instruments-and-system-markings.html">乐器和系统标记</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/mid-score-instrument-changes.html">乐谱中途更换乐器</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/showing-staves-only-where-needed.html">仅在需要时显示谱表</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/implode-and-explode.html">合并与展开</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/brackets.html">括号</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/staff-part-properties.html">谱表/分谱属性</a>
+<a class="nav-link " href="../../notation/instruments-staves-and-systems/staff-type-change.html">谱表类型更改</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../../notation/pitch/octave-lines.html">八度线</a>
+<a class="nav-link " href="../../notation/pitch/transposition.html">移调</a>
+<a class="nav-link " href="../../notation/pitch/noteheads.html">符头</a>
+<a class="nav-link " href="../../notation/pitch/key-signatures.html">调号</a>
+<a class="nav-link " href="../../notation/pitch/clefs.html">谱号</a>
+<a class="nav-link " href="../../notation/pitch/respell-pitches.html">重拼音高</a>
+<a class="nav-link " href="../../notation/pitch/ambitus.html">音域标记</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../../notation/repeats/changes-and-courtesies-at-repeats-and-jumps.html">反复和跳转处的变更与提示性记号</a>
+<a class="nav-link " href="../../notation/repeats/repeat-signs.html">反复记号</a>
+<a class="nav-link " href="../../notation/repeats/voltas.html">反复跳房子</a>
+<a class="nav-link " href="../../notation/repeats/measure-and-multimeasure-repeats.html">小节反复与多小节反复</a>
+<a class="nav-link " href="../../notation/repeats/items-across-repeats-and-jumps.html">跨越反复和跳转的项目</a>
+<a class="nav-link " href="../../notation/repeats/jumps-and-markers.html">跳转与标记</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../../notation/rhythm-meter-and-measures/measure-and-multimeasure-rests.html">小节休止符与多小节休止符</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/measure-properties.html">小节属性</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/barlines.html">小节线</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/measure-numbering.html">小节编号</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/pickup-and-non-metered-measures.html">弱起小节与非计拍小节</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/time-signatures.html">拍号</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/stems-and-flags.html">符干与符尾</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/beams.html">符杠</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/tuplets.html">连音</a>
+<a class="nav-link " href="../../notation/rhythm-meter-and-measures/regroup-rhythms.html">重新组合节奏</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-midi.html">使用 MIDI</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-vst-and-vsti.html">使用 VST 和 VSTi</a>
+<a class="nav-link " href="../../sound-and-playback/sound-flags.html">声音标记</a>
+<a class="nav-link " href="../../sound-and-playback/swing-playback.html">摇摆播放</a>
+<a class="nav-link " href="../../sound-and-playback/playback-controls.html">播放控件</a>
+<a class="nav-link " href="../../sound-and-playback/mixer.html">混音器</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds/online-sounds.html">在线音色</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../support/revert-to-factory-settings.html">恢复出厂设置</a>
+<a class="nav-link " href="../../support/troubleshooting.html">故障排除</a>
+<a class="nav-link " href="../../support/getting-help.html">获取帮助</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../text/chord-symbols.html">和弦符号</a>
+<a class="nav-link " href="../../text/fingering.html">指法</a>
+<a class="nav-link " href="../../text/rehearsal-marks.html">排练标记</a>
+<a class="nav-link " href="../../text/figured-bass.html">数字低音</a>
+<a class="nav-link " href="../../text/text-blocks.html">文本块</a>
+<a class="nav-link " href="../../text/entering-and-editing-text.html">文本的输入与编辑</a>
+<a class="nav-link " href="../../text/formatting-text.html">格式化文本</a>
+<a class="nav-link " href="../../text/lyrics.html">歌词</a>
+<a class="nav-link " href="../../text/staff-system-and-expression-text.html">谱表文本、系统文本和表情文本</a>
+<a class="nav-link " href="../../text/tempo-markings.html">速度标记</a>
+<a class="nav-link " href="../../text/header-and-footer.html">页眉和页脚</a></div></details>
+<details open><summary>Video</summary><div class="sub"><a class="nav-link " href="../../video/installing-ffmpeg.html">安装 FFmpeg</a>
+<a class="nav-link " href="../../video/exporting-video.html">导出视频</a></div></details>
+</div></nav>
+</aside>
+<label for="sidebar-toggle" class="backdrop"></label>
+<main class="content">
+  <header class="topbar">
+    <label for="sidebar-toggle" class="menu-btn">☰</label>
+    <div class="crumb">MuseScore Studio 使用手册</div>
+    <a class="lang-btn" href="../../../idiomatic-notation/guitar/guitar-techniques.html">English</a>
+  </header>
+  <article class="article"><h1 id="guitar-techniques">吉他技巧</h1>
+<h2 id="adding-a-tremolo-bar-symbol-to-your-score">将摇把符号添加到你的乐谱</h2>
+<p>摇把符号可从 <strong>吉他</strong> 面板获得（寻找放大的“V”），其应用和调整方式与<a href="#adding-a-bend-symbol-to-your-score">推弦符号</a>（上文）类似——在<a href="../../basics/properties-panel.html">属性</a>的“摇把”栏部分具有类似的图形界面。</p>
+<p>你可以在“摇把类型”中选择一系列预设，或创建你自己的自定义类型。</p>
+<h2 id="adding-a-slide-to-your-score">将滑音添加到你的乐谱</h2>
+<p>滑音可以在 <strong>琶音与滑音</strong> 面板中找到。它们有两种类型：</p>
+<ul>
+<li><strong>滑音型滑奏</strong>：这些从一个音符或和弦滑到下一个。\</li>
+</ul>
+<figure><img src="../../assets/sUIXohYDmcCHANwk3aal.png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li><strong>进/出滑音</strong>：在音符之前或之后弹奏；这些可以是上滑或下滑。\</li>
+</ul>
+<figure><img src="../../assets/chyPT8gyLXbNsi1bfZeM.png" alt="滑音"><figcaption></figcaption></figure>
+
+<p>默认情况下，滑音在乐谱上具有播放效果。你可以通过在<a href="../../basics/properties-panel.html">属性</a>面板的 <strong>常规</strong> 部分取消勾选“播放”来关闭它。</p>
+<h3 id="add-a-slide">添加滑音</h3>
+<p>使用以下方法之一：</p>
+<ul>
+<li>选中一个或多个音符作为起点，然后单击面板中所需的滑音图标。</li>
+<li>将所需的滑音从面板拖到一个音符上。</li>
+</ul>
+<p>对于从一个和弦到下一个和弦的中间滑音，程序会尽可能尝试连接正确的音符。如果需要进一步调整，见<a href="#adjust-start-and-end-points-of-a-slide">下文</a>。</p>
+<h3 id="edit-properties">编辑属性</h3>
+<p>对于<em>中间</em>滑音，以下属性可以在 <strong>属性</strong> 面板的 <strong>滑音</strong> 部分中调整。</p>
+<ul>
+<li><strong>类型</strong>：在直线或波浪线之间选择。</li>
+<li><strong>显示文字</strong>：勾选此框以显示文字。<em>注意</em>：如果音符之间没有足够空间，文字将不会显示。</li>
+<li><strong>文字</strong>：显示在滑音上方的措辞（如果有）。</li>
+</ul>
+<h3 id="adjust-start-and-end-points-of-a-slide">调整滑音的起点和终点</h3>
+<p><em>中间滑音</em>：</p>
+<p>要从一个音符到下一个音符垂直或水平移动终点手柄：</p>
+<ol>
+<li>选中滑音。</li>
+<li>单击起点或终点手柄。</li>
+<li>按住 <kbd>Shift</kbd> 并按方向键（<kbd>Up</kbd>、<kbd>Down</kbd>、<kbd>Left</kbd> 或 <kbd>Right</kbd>），将手柄移动到该方向上最近的音符。</li>
+</ol>
+<p><em>进/出滑音</em>：</p>
+<p>要调整终点手柄的位置：</p>
+<ol>
+<li>选中滑音。</li>
+<li>单击调整手柄。</li>
+<li>拖动手柄，或使用键盘方向键。</li>
+</ol>
+<h2 id="adding-a-barre-line-to-your-score">将横按线添加到你的乐谱</h2>
+<p>横按线是一种<a href="../../notation/expressive-markings/other-lines.html">文字线</a>，绘制在吉他谱表上方，表示该段落需要全横按或半横按。吉他音乐中常见如下符号：</p>
+<p>全横按（第 2 品）：\</p>
+<figure><img src="../../assets/VbTIieslyg7aR5kePFgH.png" alt="全横按"><figcaption></figcaption></figure>
+
+<p>半横按（第 2 品）：\</p>
+<figure><img src="../../assets/bnbsjsRSpv9S66w85Pz5.png" alt="半横按"><figcaption></figcaption></figure>
+
+<p>罗马数字前的 <strong>C</strong> 可以省略，线样式和文字的其他变化也是可能的——取决于出版方。</p>
+<p>要应用横按：</p>
+<ol>
+<li>单击横按的起始音符，然后按住 Shift 单击结束音符以确定范围。</li>
+<li>单击 <strong>吉他</strong> 面板中的“变调夹线”符号。</li>
+<li>根据需要自定义线和文字。见<a href="../../notation/expressive-markings/other-lines.html#line-properties">线属性</a>（其他线）。</li>
+</ol>
+<p>要调整线的长度，见<a href="../../basics/adjusting-elements-directly.html#changing-the-range-of-a-line">更改线的范围</a>。</p>
+<h2 id="adding-hammer-on-and-pull-off-symbols-to-your-score">将锤弦和勾弦符号添加到你的乐谱</h2>
+<p>锤弦和勾弦用<a href="../../notation/expressive-markings/slurs-and-ties.html">连音线</a>记谱。如果你还需要文字注释，使用<a href="../../text/staff-system-and-expression-text.html">谱表文本</a>创建它们；它们可以保存到面板以供将来使用（见<a href="../../customization/palettes.html#customizing-palette-contents">从你的乐谱添加元素</a>）。</p>
+<h2 id="notating-harmonics">记谱泛音</h2>
+<h3 id="standard-staff">标准谱表</h3>
+<p>自然泛音可以通过以下三种方式之一记谱：</p>
+<ul>
+<li>在其产生的空弦音高上。例如，第三弦上的泛音显示为：\</li>
+</ul>
+<figure><img src="../../assets/yWVk6QfUaxdPOckP9jRP.png" alt="第三弦上的自然泛音"><figcaption></figcaption></figure>
+<ul>
+<li>在其产生的琴弦品位音高上。相同的泛音现在显示为：\</li>
+</ul>
+<figure><img src="../../assets/WPPRDTHEQvOoMU8ZNKaz.png" alt="琴弦品位上的自然泛音"><figcaption></figcaption></figure>
+<ul>
+<li>在实际音高上。相同的泛音现在显示为：\</li>
+</ul>
+<figure><img src="../../assets/esL14PpAjBMQUuDoZr2F.png" alt="实际音高上的自然泛音"><figcaption></figcaption></figure>
+
+<p>通常还会附加注释，如“Nat. Har.”、“N.H.”、“Har.”，以及琴弦和品位数字；符头可以是标准的或菱形的，并渲染为空心而非黑色；品位数字可以是阿拉伯数字或罗马数字，等等。</p>
+<p><strong>修正播放</strong>：如果泛音没有以正确的音高播放，请将其静音，并创建一个以实际音高包含泛音的隐藏声部。</p>
+<p>另见<a href="https://douglasniedt.com/Tech_Tip_How_To_Read_Harmonic_Notation.html">如何在古典吉他上识读泛音记谱</a>（douglasniedt.com）。</p>
+<h3 id="tablature">吉他谱</h3>
+<p>吉他谱中的自然泛音可以简单地渲染为品位标记，也可以后跟一个点，或括在菱形中，或一对尖括号中。例如：</p>
+<figure><img src="../../assets/fsJX1eLxNz9dbQhMpHa5.png" alt="吉他谱中的泛音"><figcaption></figcaption></figure>
+
+<p>要创建一对尖括号：</p>
+<ol>
+<li>选中一个泛音并添加谱表文本。</li>
+<li>输入一个“单左尖引号”（U2039），然后是一个空格，然后是一个“单右尖引号”（U203A）。</li>
+<li>移动文字使其位于品位标记上方；</li>
+<li>调整谱表文本的字体大小及其内部空格，使其刚好包围泛音。</li>
+<li>将其保存到面板以供将来使用。</li>
+</ol>
+<h3 id="stafftablature-pairs">谱表/吉他谱对</h3>
+<p>你应确保谱表/吉他谱对<em>不</em>关联，因为你需要能够独立编辑每个谱表。</p>
+<h2 id="notating-guitar-fingering">记谱吉他指法</h2>
+<p>吉他指法的类型及其应用方法在<a href="../../text/fingering.html">指法</a>中说明。</p>
+<h2 id="adding-a-bend-symbol-to-your-score">将推弦符号添加到你的乐谱</h2>
+<p><em>请勿与</em><a href="../../notation/expressive-markings/arpeggios-and-glissandos.html#bends"><em>铜管或木管乐器推弦</em></a><em>混淆。</em>\
+<em>本节介绍的是 </em><em>MuseScore 4.0 至 MuseScore 4.1</em><em> 中使用推弦的旧版说明。对于 </em><em>MuseScore 4.2 及以上版本</em><em>的用户，请参阅</em><a href="guitar-bends.html"><strong><em>吉他推弦</em></strong></a><em><strong>章节</strong>。</em></p>
+<h3 id="apply-a-bend">应用推弦</h3>
+<p><strong>推弦</strong> 使用位于 <strong>吉他</strong> 面板中的 <strong>推弦工具</strong> 创建。要将一个或多个推弦应用到乐谱，使用以下选项之一：</p>
+<ul>
+<li>选中一个或多个音符并单击面板中的推弦符号。</li>
+<li>将推弦符号从面板拖到一个音符上。</li>
+</ul>
+<p>乐谱中会创建一个默认推弦。你可以修改此推弦，或使用<a href="../../basics/properties-panel.html">属性</a>面板 <strong>推弦</strong> 部分中的“推弦类型”从一系列替代项中选择。</p>
+<h3 id="edit-a-bend">编辑推弦</h3>
+<p>推弦的形状和长度可以在 <strong>属性</strong> 面板 <strong>推弦</strong> 部分的图形显示中编辑：</p>
+<figure><img src="../../assets/fM8LCaecCesdmfrUIUDm.png" alt="推弦图形显示"><figcaption></figcaption></figure>
+
+<p>蓝色节点之间的每个红色线段代表推弦中的一个步骤，每个步骤在乐谱中水平延伸 1 <a href="../../appendix/glossary.html#spatium">sp.</a>。任何线的斜率都表明它是上推、下推还是保持。因此，上图描述了上推，然后是保持——总长 2sp。</p>
+<p>图形的<strong>垂直轴</strong>表示音高被推上或推下的幅度：一个单位（小正方形的边长）等于四分之一音，2 个单位等于半音，4 个单位等于全音，依此类推。</p>
+<p><strong>向推弦添加另一个步骤</strong></p>
+<ul>
+<li>通过单击相应的线交点来添加另一个节点。</li>
+</ul>
+<p><strong>删除推弦步骤</strong></p>
+<ul>
+<li>单击相关节点将其移除。</li>
+</ul>
+<h3 id="adjust-bend-height">调整推弦高度</h3>
+<p>推弦的高度会自动调整，使任何文字都出现在谱表正上方。如有必要，可以使用变通方法调整此高度：</p>
+<ol>
+<li>在你想让推弦开始的音符上方（缩短高度）或下方（延伸高度）垂直创建另一个音符。</li>
+<li>将推弦应用到新音符。</li>
+<li>要调整推弦的高度，垂直移动此创建的音符，使推弦符号达到所需高度。</li>
+<li>将推弦符号拖到正确的位置（原始音符）。</li>
+<li>将创建的音符标记为不可见且静音（使用属性面板）。</li>
+</ol>
+<h3 id="reposition-bend">重新定位推弦</h3>
+<p>推弦可以使用<a href="../../basics/adjusting-elements-directly.html#changing-the-position-of-elements">更改元素位置</a>中所示的方法自由重新定位。</p></article>
+  <nav class="prevnext"><a class="pn prev" href="guitar-bends.html"><span>← 上一页</span>吉他推弦与下压</a>
+<a class="pn next" href="../harp.html"><span>下一页 →</span>竖琴</a></nav>
+  <footer class="footer">
+    <p>Powered by eyz2021 with Love</p>
+  </footer>
+</main>
+<script>window.LANG="zh";</script>
+<script>window.PAGE_DIR="idiomatic-notation/guitar";</script>
+<script src="../../_static/search_index.js"></script>
+<script src="../../_static/app.js"></script>
+</body>
+</html>

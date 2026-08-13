@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>仅在需要时显示谱表 · MuseScore Handbook</title>
+<link rel="stylesheet" href="../../_static/style.css">
+</head>
+<body>
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+<aside class="sidebar">
+  <div class="brand"><a href="../../index.html">♪ MuseScore<br>Handbook</a></div>
+  <div class="searchbox">
+    <input id="search-input" type="search" placeholder="搜索文档…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="nav"><div class="nav-section"><h3>目录</h3>
+<a class="nav-link " href="../../index.html">MuseScore Studio 使用手册</a>
+<a class="nav-link " href="../../about-the-handbook.html">关于本手册</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../about-the-handbook/using-gitbook.html">使用 GitBook</a>
+<a class="nav-link " href="../../about-the-handbook/style-guide.html">样式指南</a>
+<a class="nav-link " href="../../about-the-handbook/editing-the-handbook.html">编辑本手册</a>
+<a class="nav-link " href="../../about-the-handbook/license.html">许可证</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../alternative-notation/slash-notation.html">斜线记谱</a>
+<a class="nav-link " href="../../alternative-notation/mensural-notation-and-mensurstrich.html">有量记谱与 Mensurstrich</a>
+<a class="nav-link " href="../../alternative-notation/custom-staff-types.html">自定义谱表类型</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../appendix/changes-for-mdl-percussion.html">MDL 打击乐变更</a>
+<a class="nav-link " href="../../appendix/upgrade-from-musescore-3.x.html">从 MuseScore 3.x 升级</a>
+<a class="nav-link " href="../../appendix/all-keyboard-shortcuts.html">全部键盘快捷键</a>
+<a class="nav-link " href="../../appendix/command-line-usage.html">命令行用法</a>
+<a class="nav-link " href="../../appendix/glossary.html">术语表</a>
+<a class="nav-link " href="../../appendix/music-fonts.html">音乐字体</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../basics/working-with-multiple-voices.html">使用多个声部</a>
+<a class="nav-link " href="../../basics/using-the-palettes.html">使用面板</a>
+<a class="nav-link " href="../../basics/alternative-note-input-methods.html">其他音符输入方法</a>
+<a class="nav-link " href="../../basics/parts.html">分谱</a>
+<a class="nav-link " href="../../basics/copy-and-paste.html">复制与粘贴</a>
+<a class="nav-link " href="../../basics/properties-panel.html">属性面板</a>
+<a class="nav-link " href="../../basics/input-by-duration-mode.html">按时值输入模式</a>
+<a class="nav-link " href="../../basics/setting-up-your-score.html">新建乐谱</a>
+<a class="nav-link " href="../../basics/adding-and-removing-measures.html">添加与删除小节</a>
+<a class="nav-link " href="../../basics/adjusting-elements-directly.html">直接调整元素</a>
+<a class="nav-link " href="../../basics/editing-notes-and-rests.html">编辑音符与休止符</a>
+<a class="nav-link " href="../../basics/entering-notes-and-rests.html">输入音符与休止符</a>
+<a class="nav-link " href="../../basics/selecting-elements.html">选择元素</a>
+<a class="nav-link " href="../../basics/default-keyboard-shortcuts.html">默认键盘快捷键</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../customization/preferences.html">偏好设置</a>
+<a class="nav-link " href="../../customization/appearance.html">外观</a>
+<a class="nav-link " href="../../customization/workspaces.html">工作区</a>
+<a class="nav-link " href="../../customization/toolbars-and-windows.html">工具栏与窗口</a>
+<a class="nav-link " href="../../customization/plugins.html">插件</a>
+<a class="nav-link " href="../../customization/templates-and-styles.html">模板与样式</a>
+<a class="nav-link " href="../../customization/language.html">语言</a>
+<a class="nav-link " href="../../customization/keyboard-shortcuts.html">键盘快捷键</a>
+<a class="nav-link " href="../../customization/palettes.html">面板</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../file-management/working-with-musicxml-files.html">使用 MusicXML 文件</a>
+<a class="nav-link " href="../../file-management/share-on-audio.com.html">分享到 Audio.com</a>
+<a class="nav-link " href="../../file-management/publish-to-musescore.com.html">发布到 MuseScore.com</a>
+<a class="nav-link " href="../../file-management/backup-and-recovered-files.html">备份与恢复文件</a>
+<a class="nav-link " href="../../file-management/file-export.html">导出文件</a>
+<a class="nav-link " href="../../file-management/opening-and-saving-scores.html">打开与保存乐谱</a>
+<a class="nav-link " href="../../file-management/project-properties.html">项目属性</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../formatting/score-size-and-spacing.html">乐谱大小和间距</a>
+<a class="nav-link " href="../../formatting/using-frames-for-additional-content.html">使用框架添加额外内容</a>
+<a class="nav-link " href="../../formatting/using-sections-for-multiple-movements-or-songs.html">使用章节进行多乐章或多首歌曲</a>
+<a class="nav-link " href="../../formatting/positioning-of-elements.html">元素定位</a>
+<a class="nav-link " href="../../formatting/working-with-images.html">处理图像</a>
+<a class="nav-link " href="../../formatting/systems-and-horizontal-spacing.html">系统和水平间距</a>
+<a class="nav-link " href="../../formatting/pages-and-vertical-spacing.html">页面和垂直间距</a>
+<a class="nav-link " href="../../formatting/page-layout-concepts.html">页面排版概念</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar.html">吉他</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion.html">打击乐</a>
+<a class="nav-link " href="../../idiomatic-notation/harp.html">竖琴</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard.html">键盘</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar/creating-a-tablature-staff.html">创建吉他谱（TAB）谱表</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-techniques.html">吉他技巧</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-bends.html">吉他推弦与下压</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagrams.html">品位图</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagram-legend.html">品位图图例</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/applying-capos.html">应用变调夹</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/alternate-string-tunings.html">替代调弦</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/customizing-a-tablature-staff.html">自定义吉他谱谱表</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">输入与编辑吉他谱记谱</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/keyboard/accordion-notation.html">手风琴记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/cross-staff-notation.html">跨谱表记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/pedal.html">踏板</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/percussion/other-percussion-notation.html">其他打击乐记谱</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/percussion-kit-customization.html">打击乐套件自定义</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/customizing-the-percussion-panel.html">自定义打击乐面板</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/inputting-percussion-notation.html">输入打击乐记谱</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../introduction/download-and-installation.html">下载与安装</a>
+<a class="nav-link " href="../../introduction/upgrading-from-earlier-versions.html">从早期版本升级</a>
+<a class="nav-link " href="../../introduction/create-your-first-score.html">创建你的第一份乐谱</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../navigation/accessibility.html">无障碍功能</a>
+<a class="nav-link " href="../../navigation/timeline.html">时间线</a>
+<a class="nav-link " href="../../navigation/navigating-your-score.html">浏览乐谱</a>
+<a class="nav-link " href="../../navigation/the-user-interface.html">用户界面</a>
+<a class="nav-link " href="../../navigation/braille.html">盲文</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../instruments-staves-and-systems.html">乐器、谱表和系统</a>
+<a class="nav-link " href="../repeats.html">反复</a>
+<a class="nav-link " href="../rhythm-meter-and-measures.html">节奏、拍号与小节</a>
+<a class="nav-link " href="../expressive-markings.html">表情记号</a>
+<a class="nav-link " href="../pitch.html">音高</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="../expressive-markings/grace-notes.html">倚音</a>
+<a class="nav-link " href="../expressive-markings/other-symbols.html">其他符号</a>
+<a class="nav-link " href="../expressive-markings/other-lines.html">其他线条</a>
+<a class="nav-link " href="../expressive-markings/dynamics-and-hairpins.html">力度记号与力度变化线</a>
+<a class="nav-link " href="../expressive-markings/breaths-and-pauses.html">换气记号与停顿</a>
+<a class="nav-link " href="../expressive-markings/articulations.html">演奏记号</a>
+<a class="nav-link " href="../expressive-markings/arpeggios-and-glissandos.html">琶音与滑音</a>
+<a class="nav-link " href="../expressive-markings/laissez-vibrer-ties.html">自由延长延音线</a>
+<a class="nav-link " href="../expressive-markings/ornaments.html">装饰音</a>
+<a class="nav-link " href="../expressive-markings/slurs-and-ties.html">连音线与延音线</a>
+<a class="nav-link " href="../expressive-markings/tremolos-and-rolls.html">震音与滚奏</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="instruments-and-system-markings.html">乐器和系统标记</a>
+<a class="nav-link " href="mid-score-instrument-changes.html">乐谱中途更换乐器</a>
+<a class="nav-link active" href="showing-staves-only-where-needed.html">仅在需要时显示谱表</a>
+<a class="nav-link " href="implode-and-explode.html">合并与展开</a>
+<a class="nav-link " href="brackets.html">括号</a>
+<a class="nav-link " href="staff-part-properties.html">谱表/分谱属性</a>
+<a class="nav-link " href="staff-type-change.html">谱表类型更改</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../pitch/octave-lines.html">八度线</a>
+<a class="nav-link " href="../pitch/transposition.html">移调</a>
+<a class="nav-link " href="../pitch/noteheads.html">符头</a>
+<a class="nav-link " href="../pitch/key-signatures.html">调号</a>
+<a class="nav-link " href="../pitch/clefs.html">谱号</a>
+<a class="nav-link " href="../pitch/respell-pitches.html">重拼音高</a>
+<a class="nav-link " href="../pitch/ambitus.html">音域标记</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../repeats/changes-and-courtesies-at-repeats-and-jumps.html">反复和跳转处的变更与提示性记号</a>
+<a class="nav-link " href="../repeats/repeat-signs.html">反复记号</a>
+<a class="nav-link " href="../repeats/voltas.html">反复跳房子</a>
+<a class="nav-link " href="../repeats/measure-and-multimeasure-repeats.html">小节反复与多小节反复</a>
+<a class="nav-link " href="../repeats/items-across-repeats-and-jumps.html">跨越反复和跳转的项目</a>
+<a class="nav-link " href="../repeats/jumps-and-markers.html">跳转与标记</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../rhythm-meter-and-measures/measure-and-multimeasure-rests.html">小节休止符与多小节休止符</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-properties.html">小节属性</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/barlines.html">小节线</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-numbering.html">小节编号</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/pickup-and-non-metered-measures.html">弱起小节与非计拍小节</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/time-signatures.html">拍号</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/stems-and-flags.html">符干与符尾</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/beams.html">符杠</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/tuplets.html">连音</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/regroup-rhythms.html">重新组合节奏</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-midi.html">使用 MIDI</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-vst-and-vsti.html">使用 VST 和 VSTi</a>
+<a class="nav-link " href="../../sound-and-playback/sound-flags.html">声音标记</a>
+<a class="nav-link " href="../../sound-and-playback/swing-playback.html">摇摆播放</a>
+<a class="nav-link " href="../../sound-and-playback/playback-controls.html">播放控件</a>
+<a class="nav-link " href="../../sound-and-playback/mixer.html">混音器</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds/online-sounds.html">在线音色</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../support/revert-to-factory-settings.html">恢复出厂设置</a>
+<a class="nav-link " href="../../support/troubleshooting.html">故障排除</a>
+<a class="nav-link " href="../../support/getting-help.html">获取帮助</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../text/chord-symbols.html">和弦符号</a>
+<a class="nav-link " href="../../text/fingering.html">指法</a>
+<a class="nav-link " href="../../text/rehearsal-marks.html">排练标记</a>
+<a class="nav-link " href="../../text/figured-bass.html">数字低音</a>
+<a class="nav-link " href="../../text/text-blocks.html">文本块</a>
+<a class="nav-link " href="../../text/entering-and-editing-text.html">文本的输入与编辑</a>
+<a class="nav-link " href="../../text/formatting-text.html">格式化文本</a>
+<a class="nav-link " href="../../text/lyrics.html">歌词</a>
+<a class="nav-link " href="../../text/staff-system-and-expression-text.html">谱表文本、系统文本和表情文本</a>
+<a class="nav-link " href="../../text/tempo-markings.html">速度标记</a>
+<a class="nav-link " href="../../text/header-and-footer.html">页眉和页脚</a></div></details>
+<details open><summary>Video</summary><div class="sub"><a class="nav-link " href="../../video/installing-ffmpeg.html">安装 FFmpeg</a>
+<a class="nav-link " href="../../video/exporting-video.html">导出视频</a></div></details>
+</div></nav>
+</aside>
+<label for="sidebar-toggle" class="backdrop"></label>
+<main class="content">
+  <header class="topbar">
+    <label for="sidebar-toggle" class="menu-btn">☰</label>
+    <div class="crumb">MuseScore Studio 使用手册</div>
+    <a class="lang-btn" href="../../../notation/instruments-staves-and-systems/showing-staves-only-where-needed.html">English</a>
+  </header>
+  <article class="article"><h1 id="showing-staves-only-where-needed">仅在需要时显示谱表</h1>
+<p>默认情况下，乐谱会在整份乐谱的所有页面上显示所有谱表的所有小节，无论它们是否为空。不过，你可能希望某些谱表只出现在需要的系统上，甚至希望某条谱表在系统中间出现或消失。MuseScore Studio 为此提供了多种控制手段。</p>
+<p>要在整份乐谱中<em>完全</em>隐藏某件乐器或谱表，参见 <a href="instruments-and-system-markings.html#hiding-instruments-and-staves">隐藏乐器和谱表</a>。</p>
+<h2 id="hiding-staves-when-they-are-empty-for-an-entire-system">当谱表在整个系统上为空时隐藏它</h2>
+<p>如果一条谱表在整个系统上没有任何音符或其他标记（有少数例外），则该谱表被视为“空”。在许多出版的合奏和管弦乐谱中，隐藏这些空谱表以节省空间是常见的做法：</p>
+<figure><img src="../../assets/9SvwpMLI6h0ThfpqibQ9.png" alt="隐藏空谱表"><figcaption></figcaption></figure>
+
+<h3 id="hiding-all-empty-staves">隐藏所有空谱表</h3>
+<p>要自动隐藏或显示当前乐谱中的所有空谱表：</p>
+<ol>
+<li>确保乐谱中没有任何内容被选中（如有必要按 <kbd>Esc</kbd>）。</li>
+<li>转到 <strong>属性</strong> 面板。</li>
+<li>在 <strong>乐谱外观</strong> 下，勾选 <strong>自动隐藏所有空谱表</strong>。</li>
+</ol>
+<figure><img src="../../assets/hAdk7i4YYc4jZmh6KFS6.png" alt="属性面板中的空谱表设置"><figcaption></figcaption></figure>
+
+<p><strong>格式 -&gt; 样式 -&gt; 乐谱</strong> 中也有相同的开关：</p>
+<figure><img src="../../assets/f45HUwqTJvKkmATfD30i.png" alt="隐藏空谱表样式设置"><figcaption></figcaption></figure>
+
+<p>常见的做法（虽非普遍）是在乐谱的第一个系统上显示所有谱表，即使它们在后续系统上被隐藏（这样第一页总会显示完整的乐器编制）。如果你希望即使在第一个系统上也隐藏空谱表，请取消勾选 <strong>不要在第一个系统隐藏空谱表</strong> 开关。</p>
+<p>如果取消勾选 <strong>当只跨越单条谱表时显示括号</strong>，那么当一个括号组中除一条谱表外的所有谱表都在某个系统上被隐藏时，括号和花括号也会被隐藏。如果你希望这些括号保持可见，请勾选此框。</p>
+<h3 id="excluding-specific-staves-from-being-hidden">排除特定谱表，使其不被隐藏</h3>
+<p>刚才描述的设置（<strong>自动隐藏所有空谱表</strong>）适用于乐谱中的所有谱表，但你可以使用 <strong>排版</strong> 面板（<strong>视图 -&gt; 排版</strong> 或用 <kbd>F7</kbd> 切换）中的设置，为特定乐器和/或谱表覆盖此设置。</p>
+<h4 id="overriding-all-staves-of-an-instrument">覆盖一件乐器的所有谱表</h4>
+<ol>
+<li>单击乐器名称旁的 <picture><source srcset="../../assets/SOurrY7aIj8nGSRHX7Bu.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/shCn39pUgQVUOn4gLkP8.svg" alt="" data-size="line"></picture> 齿轮按钮。</li>
+<li>在出现的弹出菜单中，为 <strong>隐藏空谱表</strong> 选择一个选项：
+   * <strong>自动</strong>：遵循整份乐谱的设置（这是默认选项）
+   * <strong>始终隐藏</strong>：谱表为空时始终隐藏（即使整份乐谱的设置未开启）
+   * <strong>从不隐藏</strong>：谱表为空时从不隐藏（即使整份乐谱的设置已开启）</li>
+</ol>
+<figure><img src="../../assets/zSgu2H45d7P8rrSHtXal.png" alt="为乐器隐藏谱表"><figcaption></figcaption></figure>
+
+<p><strong>始终隐藏</strong> 设置对于临时谱表很有用。例如：</p>
+<ul>
+<li>只出现几小节的提示性谱表</li>
+<li>键盘分谱中某段特定段落所需的第三条谱表（另见下文 <a href="#ossia">Ossia</a>）</li>
+</ul>
+<p>默认情况下，只有在某个系统上<em>所有</em>乐器的谱表都为空时，谱表才会被隐藏。当你有一件多谱表的乐器（如钢琴或竖琴），但希望它的所有谱表都显示、即使其中一些为空（例如，在某个系统上只有右手在演奏）时，这很有用。如果你<em>确实</em>希望允许隐藏个别谱表，请取消勾选 <strong>仅当整个乐器为空时才在系统上隐藏谱表</strong>。请注意，此选项仅对多谱表的乐器可见。</p>
+<h4 id="override-a-specific-staff-within-an-instrument">覆盖一件乐器内的特定谱表</h4>
+<ol>
+<li>单击乐器名称旁的 <picture><source srcset="../../assets/EiKlrpK9KKtRbQUkCDq6.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/PUxsSdg6jUssH8cJEcgA.svg" alt="" data-size="line"></picture> 箭头按钮以显示其谱表。</li>
+<li>单击谱表旁的 <picture><source srcset="../../assets/SOurrY7aIj8nGSRHX7Bu.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/shCn39pUgQVUOn4gLkP8.svg" alt="" data-size="line"></picture> 齿轮按钮。</li>
+<li>在出现的弹出菜单中，为 <strong>隐藏空谱表</strong> 选择一个选项：
+   * <strong>遵循乐器</strong>：遵循该乐器的设置（这是默认选项）。见上文 <a href="#overriding-all-staves-of-an-instrument">覆盖一件乐器的所有谱表</a>。
+   * <strong>始终隐藏</strong>：谱表为空时始终隐藏（即使整份乐谱的设置未开启）。
+   * <strong>从不隐藏</strong>：谱表为空时从不隐藏（即使整份乐谱的设置已开启）。</li>
+</ol>
+<figure><img src="../../assets/G0kIl7cURZnQvWggP1Wf.png" alt="隐藏乐器内的特定谱表"><figcaption></figcaption></figure>
+
+<h3 id="choosing-which-staff-to-show-when-the-entire-system-is-empty">当整个系统为空时选择显示哪条谱表</h3>
+<p>当某个系统的所有谱表都为空、且谱表隐藏已开启时，默认会显示最顶端的谱表。如果你希望在此情况下选择另一条（或另几条）谱表来显示：</p>
+<ol>
+<li>确保 <strong>排版</strong> 面板可见（<strong>视图 -&gt; 排版</strong> 或用 <kbd>F7</kbd> 切换）。</li>
+<li>单击乐器名称旁的 <picture><source srcset="../../assets/EiKlrpK9KKtRbQUkCDq6.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/PUxsSdg6jUssH8cJEcgA.svg" alt="" data-size="line"></picture> 箭头按钮以显示其谱表。</li>
+<li>单击谱表旁的 <picture><source srcset="../../assets/SOurrY7aIj8nGSRHX7Bu.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/shCn39pUgQVUOn4gLkP8.svg" alt="" data-size="line"></picture> 齿轮按钮。</li>
+<li>在出现的弹出菜单中，勾选 <strong>如果整个系统为空，则显示此谱表</strong>。</li>
+</ol>
+<p>请注意，此设置独立于这里描述的所有其他设置，并且仅在整个系统为空时适用。</p>
+<h2 id="hiding-empty-measures">隐藏空小节</h2>
+<h3 id="cutaway-staves">剖面谱表</h3>
+<p>在一些当代乐谱中使用一种样式，其中个别小节在为空时会被隐藏。这些有时被称为<em>剖面谱表</em>。</p>
+<figure><img src="../../assets/YQZmRisR7DDfmLSu8IgL.png" alt="剖面谱表"><figcaption></figcaption></figure>
+
+<p>要对特定谱表使用此样式：</p>
+<ol>
+<li>确保 <strong>排版</strong> 面板可见（<strong>视图 -&gt; 排版</strong> 或用 <kbd>F7</kbd> 切换）。</li>
+<li>单击乐器名称旁的 <picture><source srcset="../../assets/EiKlrpK9KKtRbQUkCDq6.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/PUxsSdg6jUssH8cJEcgA.svg" alt="" data-size="line"></picture> 箭头按钮以显示其谱表。</li>
+<li>单击谱表旁的 <picture><source srcset="../../assets/SOurrY7aIj8nGSRHX7Bu.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/shCn39pUgQVUOn4gLkP8.svg" alt="" data-size="line"></picture> 齿轮按钮，并勾选 <strong>隐藏所有不含记谱的小节（剖面）</strong>。</li>
+</ol>
+<figure><img src="../../assets/M6ktuZV7HUlNTFZI7aRO.png" alt="排版面板中剖面谱表的设置"><figcaption></figcaption></figure>
+
+<p>请注意，这会按小节隐藏谱表。即使系统上的所有小节都为空，除非开启了谱表隐藏，否则仍会为该谱表保留垂直空间，并且乐器标签和括号可能仍会显示。为防止这种情况发生，最好将剖面谱表的 <strong>隐藏空谱表</strong> 也设置为 <strong>始终隐藏</strong>。</p>
+<h3 id="hiding-specific-measures">隐藏特定小节</h3>
+<p>MuseScore Studio 还允许你在任何给定谱表上将个别小节设为不可见，无论它是否为空。</p>
+<p>要将某条谱表上的某个小节设为不可见：</p>
+<ol>
+<li>右键单击该小节</li>
+<li>选择 <strong>小节属性</strong></li>
+<li>在出现的对话框中，取消勾选你希望该小节在哪些谱表中不可见的 <strong>可见</strong> 框。</li>
+</ol>
+<h2 id="ossia">Ossia</h2>
+<p><em>Ossia</em> 是指在一段主谱表上方或下方的小谱表上记下某个段落，以显示一种替代方案（不同的编辑解读、装饰音的实现、简化奏法等）。</p>
+<figure><img src="../../assets/bUCalHiYPkQsXoiTi0Ne.png" alt="Ossia"><figcaption></figcaption></figure>
+
+<p>这些可以在 MuseScore Studio 中使用上述功能的组合来创建：</p>
+<ol>
+<li>按照 <a href="instruments-and-system-markings.html#adding-a-staff-to-an-existing-instrument">向现有乐器添加谱表</a> 所述添加一条谱表。你可能需要将其移动到相对于主谱表的正确位置，并调整任何自动创建的括号。</li>
+<li>在新谱表上输入所需的记谱。</li>
+<li>确保 <strong>排版</strong> 面板可见（<strong>视图 -&gt; 排版</strong> 或用 <kbd>F7</kbd> 切换）。</li>
+<li>单击乐器名称旁的 <picture><source srcset="../../assets/EiKlrpK9KKtRbQUkCDq6.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/PUxsSdg6jUssH8cJEcgA.svg" alt="" data-size="line"></picture> 箭头按钮以显示其谱表。</li>
+<li>单击谱表旁的 <picture><source srcset="../../assets/SOurrY7aIj8nGSRHX7Bu.svg" media="(prefers-color-scheme: dark)"><img src="../../assets/shCn39pUgQVUOn4gLkP8.svg" alt="" data-size="line"></picture> 齿轮按钮。</li>
+<li>在出现的弹出菜单中，勾选 <strong>小谱表</strong> 和 <strong>隐藏所有不含记谱的小节（剖面）</strong>。</li>
+</ol>
+<p>如果你希望听到 ossia 的播放而不是正常谱表，请选中正常谱表上相应的小节，并在 <strong>属性</strong> 面板中取消勾选 <strong>播放</strong> 框。如果你更希望听到正常谱表，则改为对 ossia 谱表执行此操作。</p>
+<p>你可能还想隐藏该段落的起始或末尾小节线。为此，选中该小节线并按 <kbd>V</kbd>，或在 <strong>属性</strong> 面板中取消勾选 <strong>可见</strong> 框。</p>
+<p>你可能还希望减小或固定 ossia 与正常谱表之间的距离。为此，使用 <strong>排版</strong> 面板中的 <a href="../../formatting/pages-and-vertical-spacing.html#staff-spacer-fixed-down">固定向下谱表间距</a>。</p></article>
+  <nav class="prevnext"><a class="pn prev" href="mid-score-instrument-changes.html"><span>← 上一页</span>乐谱中途更换乐器</a>
+<a class="pn next" href="staff-part-properties.html"><span>下一页 →</span>谱表/分谱属性</a></nav>
+  <footer class="footer">
+    <p>Powered by eyz2021 with Love</p>
+  </footer>
+</main>
+<script>window.LANG="zh";</script>
+<script>window.PAGE_DIR="notation/instruments-staves-and-systems";</script>
+<script src="../../_static/search_index.js"></script>
+<script src="../../_static/app.js"></script>
+</body>
+</html>

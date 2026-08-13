@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamics and hairpins · MuseScore Handbook</title>
+<link rel="stylesheet" href="../../../_static/style.css">
+</head>
+<body>
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+<aside class="sidebar">
+  <div class="brand"><a href="../../../index.html">♪ MuseScore<br>Handbook</a></div>
+  <div class="searchbox">
+    <input id="search-input" type="search" placeholder="Search…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="nav"><div class="nav-section"><h3>English (US)</h3>
+<a class="nav-link " href="../../../about-the-handbook.html">About the handbook</a>
+<a class="nav-link " href="../../../index.html">MuseScore Studio Handbook</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../../about-the-handbook/editing-the-handbook.html">Editing the handbook</a>
+<a class="nav-link " href="../../../about-the-handbook/license.html">License</a>
+<a class="nav-link " href="../../../about-the-handbook/style-guide.html">Style guide</a>
+<a class="nav-link " href="../../../about-the-handbook/using-gitbook.html">Using GitBook</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../../alternative-notation/custom-staff-types.html">Custom staff types</a>
+<a class="nav-link " href="../../../alternative-notation/mensural-notation-and-mensurstrich.html">Mensural notation and Mensurstrich</a>
+<a class="nav-link " href="../../../alternative-notation/slash-notation.html">Slash notation</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../../appendix/all-keyboard-shortcuts.html">All keyboard shortcuts</a>
+<a class="nav-link " href="../../../appendix/changes-for-mdl-percussion.html">Changes for MDL percussion</a>
+<a class="nav-link " href="../../../appendix/command-line-usage.html">Command line usage</a>
+<a class="nav-link " href="../../../appendix/glossary.html">Glossary</a>
+<a class="nav-link " href="../../../appendix/music-fonts.html">Music fonts</a>
+<a class="nav-link " href="../../../appendix/upgrade-from-musescore-3.x.html">Upgrade from MuseScore 3.x</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../../basics/adding-and-removing-measures.html">Adding and removing measures</a>
+<a class="nav-link " href="../../../basics/adjusting-elements-directly.html">Adjusting elements directly</a>
+<a class="nav-link " href="../../../basics/alternative-note-input-methods.html">Alternative note input methods</a>
+<a class="nav-link " href="../../../basics/copy-and-paste.html">Copy and paste</a>
+<a class="nav-link " href="../../../basics/default-keyboard-shortcuts.html">Default keyboard shortcuts</a>
+<a class="nav-link " href="../../../basics/editing-notes-and-rests.html">Editing notes and rests</a>
+<a class="nav-link " href="../../../basics/entering-notes-and-rests.html">Entering notes and rests</a>
+<a class="nav-link " href="../../../basics/input-by-duration-mode.html">Input by duration mode</a>
+<a class="nav-link " href="../../../basics/parts.html">Parts</a>
+<a class="nav-link " href="../../../basics/properties-panel.html">Properties panel</a>
+<a class="nav-link " href="../../../basics/selecting-elements.html">Selecting elements</a>
+<a class="nav-link " href="../../../basics/setting-up-your-score.html">Setting up your score</a>
+<a class="nav-link " href="../../../basics/using-the-palettes.html">Using the palettes</a>
+<a class="nav-link " href="../../../basics/working-with-multiple-voices.html">Working with multiple voices</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../../customization/appearance.html">Appearance</a>
+<a class="nav-link " href="../../../customization/keyboard-shortcuts.html">Keyboard shortcuts</a>
+<a class="nav-link " href="../../../customization/language.html">Language</a>
+<a class="nav-link " href="../../../customization/palettes.html">Palettes</a>
+<a class="nav-link " href="../../../customization/plugins.html">Plugins</a>
+<a class="nav-link " href="../../../customization/preferences.html">Preferences</a>
+<a class="nav-link " href="../../../customization/templates-and-styles.html">Templates and styles</a>
+<a class="nav-link " href="../../../customization/toolbars-and-windows.html">Toolbars and windows</a>
+<a class="nav-link " href="../../../customization/workspaces.html">Workspaces</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../../file-management/backup-and-recovered-files.html">Backup and recovered files</a>
+<a class="nav-link " href="../../../file-management/file-export.html">File export</a>
+<a class="nav-link " href="../../../file-management/opening-and-saving-scores.html">Opening and saving scores</a>
+<a class="nav-link " href="../../../file-management/project-properties.html">Project properties</a>
+<a class="nav-link " href="../../../file-management/publish-to-musescore.com.html">Publish to MuseScore.com</a>
+<a class="nav-link " href="../../../file-management/share-on-audio.com.html">Share on Audio.com</a>
+<a class="nav-link " href="../../../file-management/working-with-musicxml-files.html">Working with MusicXML files</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../../formatting/page-layout-concepts.html">Page layout concepts</a>
+<a class="nav-link " href="../../../formatting/pages-and-vertical-spacing.html">Pages and vertical spacing</a>
+<a class="nav-link " href="../../../formatting/positioning-of-elements.html">Positioning of elements</a>
+<a class="nav-link " href="../../../formatting/score-size-and-spacing.html">Score size and spacing</a>
+<a class="nav-link " href="../../../formatting/systems-and-horizontal-spacing.html">Systems and horizontal spacing</a>
+<a class="nav-link " href="../../../formatting/using-frames-for-additional-content.html">Using frames for additional content</a>
+<a class="nav-link " href="../../../formatting/using-sections-for-multiple-movements-or-songs.html">Using sections for multiple movements or songs</a>
+<a class="nav-link " href="../../../formatting/working-with-images.html">Working with images</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../../idiomatic-notation/guitar.html">Guitar</a>
+<a class="nav-link " href="../../../idiomatic-notation/harp.html">Harp</a>
+<a class="nav-link " href="../../../idiomatic-notation/keyboard.html">Keyboard</a>
+<a class="nav-link " href="../../../idiomatic-notation/percussion.html">Percussion</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../../idiomatic-notation/guitar/alternate-string-tunings.html">Alternate string tunings</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/applying-capos.html">Applying capos</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/creating-a-tablature-staff.html">Creating a tablature staff</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/customizing-a-tablature-staff.html">Customizing a tablature staff</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">Entering and editing tablature notation</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/fretboard-diagram-legend.html">Fretboard diagram legend</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/fretboard-diagrams.html">Fretboard diagrams</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/guitar-bends.html">Guitar bends &amp; dives</a>
+<a class="nav-link " href="../../../idiomatic-notation/guitar/guitar-techniques.html">Guitar techniques</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../../idiomatic-notation/keyboard/accordion-notation.html">Accordion notation</a>
+<a class="nav-link " href="../../../idiomatic-notation/keyboard/cross-staff-notation.html">Cross-staff notation</a>
+<a class="nav-link " href="../../../idiomatic-notation/keyboard/pedal.html">Pedal</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../../idiomatic-notation/percussion/customizing-the-percussion-panel.html">Customizing the percussion panel</a>
+<a class="nav-link " href="../../../idiomatic-notation/percussion/inputting-percussion-notation.html">Inputting percussion notation</a>
+<a class="nav-link " href="../../../idiomatic-notation/percussion/other-percussion-notation.html">Other percussion notation</a>
+<a class="nav-link " href="../../../idiomatic-notation/percussion/percussion-kit-customization.html">Percussion kit customization</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../../introduction/create-your-first-score.html">Create your first score</a>
+<a class="nav-link " href="../../../introduction/download-and-installation.html">Download and installation</a>
+<a class="nav-link " href="../../../introduction/upgrading-from-earlier-versions.html">Upgrading from earlier versions</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../../navigation/accessibility.html">Accessibility</a>
+<a class="nav-link " href="../../../navigation/braille.html">Braille</a>
+<a class="nav-link " href="../../../navigation/navigating-your-score.html">Navigating your score</a>
+<a class="nav-link " href="../../../navigation/the-user-interface.html">The user interface</a>
+<a class="nav-link " href="../../../navigation/timeline.html">Timeline</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../../../notation/expressive-markings.html">Expressive markings</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems.html">Instruments, staves, and systems</a>
+<a class="nav-link " href="../../../notation/pitch.html">Pitch</a>
+<a class="nav-link " href="../../../notation/repeats.html">Repeats</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures.html">Rhythm, meter, and measures</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="../../../notation/expressive-markings/arpeggios-and-glissandos.html">Arpeggios and glissandos</a>
+<a class="nav-link " href="../../../notation/expressive-markings/articulations.html">Articulations</a>
+<a class="nav-link " href="../../../notation/expressive-markings/breaths-and-pauses.html">Breaths and pauses</a>
+<a class="nav-link " href="../../../notation/expressive-markings/dynamics-and-hairpins.html">Dynamics and hairpins</a>
+<a class="nav-link " href="../../../notation/expressive-markings/grace-notes.html">Grace notes</a>
+<a class="nav-link " href="../../../notation/expressive-markings/laissez-vibrer-ties.html">Laissez vibrer ties</a>
+<a class="nav-link " href="../../../notation/expressive-markings/ornaments.html">Ornaments</a>
+<a class="nav-link " href="../../../notation/expressive-markings/other-lines.html">Other lines</a>
+<a class="nav-link " href="../../../notation/expressive-markings/other-symbols.html">Other symbols</a>
+<a class="nav-link " href="../../../notation/expressive-markings/slurs-and-ties.html">Slurs and ties</a>
+<a class="nav-link " href="../../../notation/expressive-markings/tremolos-and-rolls.html">Tremolos and rolls</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="../../../notation/instruments-staves-and-systems/brackets.html">Brackets</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/implode-and-explode.html">Implode and explode</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/instruments-and-system-markings.html">Instruments and system markings</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/mid-score-instrument-changes.html">Mid-score instrument changes</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/showing-staves-only-where-needed.html">Showing staves only where needed</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/staff-type-change.html">Staff type change</a>
+<a class="nav-link " href="../../../notation/instruments-staves-and-systems/staff-part-properties.html">Staff/Part properties</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../../../notation/pitch/ambitus.html">Ambitus</a>
+<a class="nav-link " href="../../../notation/pitch/clefs.html">Clefs</a>
+<a class="nav-link " href="../../../notation/pitch/key-signatures.html">Key signatures</a>
+<a class="nav-link " href="../../../notation/pitch/noteheads.html">Noteheads</a>
+<a class="nav-link " href="../../../notation/pitch/octave-lines.html">Octave lines</a>
+<a class="nav-link " href="../../../notation/pitch/respell-pitches.html">Respell pitches</a>
+<a class="nav-link " href="../../../notation/pitch/transposition.html">Transposition</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../../../notation/repeats/changes-and-courtesies-at-repeats-and-jumps.html">Changes and courtesies at repeats and jumps</a>
+<a class="nav-link " href="../../../notation/repeats/items-across-repeats-and-jumps.html">Items across repeats and jumps</a>
+<a class="nav-link " href="../../../notation/repeats/jumps-and-markers.html">Jumps and markers</a>
+<a class="nav-link " href="../../../notation/repeats/measure-and-multimeasure-repeats.html">Measure and multimeasure repeats</a>
+<a class="nav-link " href="../../../notation/repeats/repeat-signs.html">Repeat signs</a>
+<a class="nav-link " href="../../../notation/repeats/voltas.html">Voltas</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../../../notation/rhythm-meter-and-measures/barlines.html">Barlines</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/beams.html">Beams</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/measure-and-multimeasure-rests.html">Measure and multimeasure rests</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/measure-numbering.html">Measure numbering</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/measure-properties.html">Measure properties</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/pickup-and-non-metered-measures.html">Pickup and non-metered measures</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/regroup-rhythms.html">Regroup rhythms</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/stems-and-flags.html">Stems and flags</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/time-signatures.html">Time signatures</a>
+<a class="nav-link " href="../../../notation/rhythm-meter-and-measures/tuplets.html">Tuplets</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../../sound-and-playback/mixer.html">Mixer</a>
+<a class="nav-link " href="../../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../../sound-and-playback/playback-controls.html">Playback controls</a>
+<a class="nav-link " href="../../../sound-and-playback/sound-flags.html">Sound flags</a>
+<a class="nav-link " href="../../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../../sound-and-playback/swing-playback.html">Swing playback</a>
+<a class="nav-link " href="../../../sound-and-playback/working-with-midi.html">Working with MIDI</a>
+<a class="nav-link " href="../../../sound-and-playback/working-with-vst-and-vsti.html">Working with VST and VSTi</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../../sound-and-playback/musesounds/online-sounds.html">Online sounds</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../../support/getting-help.html">Getting help</a>
+<a class="nav-link " href="../../../support/revert-to-factory-settings.html">Revert to factory settings</a>
+<a class="nav-link " href="../../../support/troubleshooting.html">Troubleshooting</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../../text/chord-symbols.html">Chord symbols</a>
+<a class="nav-link " href="../../../text/entering-and-editing-text.html">Entering and editing text</a>
+<a class="nav-link " href="../../../text/figured-bass.html">Figured bass</a>
+<a class="nav-link " href="../../../text/fingering.html">Fingering</a>
+<a class="nav-link " href="../../../text/formatting-text.html">Formatting text</a>
+<a class="nav-link " href="../../../text/header-and-footer.html">Header and footer</a>
+<a class="nav-link " href="../../../text/lyrics.html">Lyrics</a>
+<a class="nav-link " href="../../../text/rehearsal-marks.html">Rehearsal marks</a>
+<a class="nav-link " href="../../../text/staff-system-and-expression-text.html">Staff, system, and expression text</a>
+<a class="nav-link " href="../../../text/tempo-markings.html">Tempo markings</a>
+<a class="nav-link " href="../../../text/text-blocks.html">Text blocks</a></div></details>
+<details open><summary>Video</summary><div class="sub"><a class="nav-link " href="../../../video/exporting-video.html">Exporting video</a>
+<a class="nav-link " href="../../../video/installing-ffmpeg.html">Installing FFmpeg</a></div></details>
+</div>
+<div class="nav-section"><h3>English (UK)</h3>
+<a class="nav-link " href="../../about-the-handbook.html">About the handbook</a>
+<a class="nav-link " href="../../index.html">MuseScore Studio Handbook</a>
+<details open><summary>About The Handbook</summary><div class="sub"><a class="nav-link " href="../../about-the-handbook/editing-the-handbook.html">Editing the handbook</a>
+<a class="nav-link " href="../../about-the-handbook/license.html">Licence</a>
+<a class="nav-link " href="../../about-the-handbook/style-guide.html">Style guide</a>
+<a class="nav-link " href="../../about-the-handbook/using-gitbook.html">Using GitBook</a></div></details>
+<details open><summary>Alternative Notation</summary><div class="sub"><a class="nav-link " href="../../alternative-notation/custom-staff-types.html">Custom stave types</a>
+<a class="nav-link " href="../../alternative-notation/mensural-notation-and-mensurstrich.html">Mensural notation and Mensurstrich</a>
+<a class="nav-link " href="../../alternative-notation/slash-notation.html">Slash notation</a></div></details>
+<details open><summary>Appendix</summary><div class="sub"><a class="nav-link " href="../../appendix/all-keyboard-shortcuts.html">All keyboard shortcuts</a>
+<a class="nav-link " href="../../appendix/changes-for-mdl-percussion.html">Changes for MDL percussion</a>
+<a class="nav-link " href="../../appendix/command-line-usage.html">Command line usage</a>
+<a class="nav-link " href="../../appendix/glossary.html">Glossary</a>
+<a class="nav-link " href="../../appendix/music-fonts.html">Music fonts</a>
+<a class="nav-link " href="../../appendix/upgrade-from-musescore-3.x.html">Upgrade from MuseScore 3.x</a></div></details>
+<details open><summary>Basics</summary><div class="sub"><a class="nav-link " href="../../basics/adding-and-removing-measures.html">Adding and removing bars</a>
+<a class="nav-link " href="../../basics/adjusting-elements-directly.html">Adjusting elements directly</a>
+<a class="nav-link " href="../../basics/alternative-note-input-methods.html">Alternative note input methods</a>
+<a class="nav-link " href="../../basics/copy-and-paste.html">Copy and paste</a>
+<a class="nav-link " href="../../basics/default-keyboard-shortcuts.html">Default keyboard shortcuts</a>
+<a class="nav-link " href="../../basics/editing-notes-and-rests.html">Editing notes and rests</a>
+<a class="nav-link " href="../../basics/entering-notes-and-rests.html">Entering notes and rests</a>
+<a class="nav-link " href="../../basics/input-by-duration-mode.html">Input by duration mode</a>
+<a class="nav-link " href="../../basics/parts.html">Parts</a>
+<a class="nav-link " href="../../basics/properties-panel.html">Properties panel</a>
+<a class="nav-link " href="../../basics/selecting-elements.html">Selecting elements</a>
+<a class="nav-link " href="../../basics/setting-up-your-score.html">Setting up your score</a>
+<a class="nav-link " href="../../basics/using-the-palettes.html">Using the palettes</a>
+<a class="nav-link " href="../../basics/working-with-multiple-voices.html">Working with multiple voices</a></div></details>
+<details open><summary>Customization</summary><div class="sub"><a class="nav-link " href="../../customization/appearance.html">Appearance</a>
+<a class="nav-link " href="../../customization/keyboard-shortcuts.html">Keyboard shortcuts</a>
+<a class="nav-link " href="../../customization/language.html">Language</a>
+<a class="nav-link " href="../../customization/palettes.html">Palettes</a>
+<a class="nav-link " href="../../customization/plugins.html">Plugins</a>
+<a class="nav-link " href="../../customization/preferences.html">Preferences</a>
+<a class="nav-link " href="../../customization/templates-and-styles.html">Templates and styles</a>
+<a class="nav-link " href="../../customization/toolbars-and-windows.html">Toolbars and windows</a>
+<a class="nav-link " href="../../customization/workspaces.html">Workspaces</a></div></details>
+<details open><summary>File Management</summary><div class="sub"><a class="nav-link " href="../../file-management/backup-and-recovered-files.html">Backup and recovered files</a>
+<a class="nav-link " href="../../file-management/file-export.html">File export</a>
+<a class="nav-link " href="../../file-management/opening-and-saving-scores.html">Opening and saving scores</a>
+<a class="nav-link " href="../../file-management/project-properties.html">Project properties</a>
+<a class="nav-link " href="../../file-management/publish-to-musescore.com.html">Publish to MuseScore.com</a>
+<a class="nav-link " href="../../file-management/share-on-audio.com.html">Share on Audio.com</a>
+<a class="nav-link " href="../../file-management/working-with-musicxml-files.html">Working with MusicXML files</a></div></details>
+<details open><summary>Formatting</summary><div class="sub"><a class="nav-link " href="../../formatting/page-layout-concepts.html">Page layout concepts</a>
+<a class="nav-link " href="../../formatting/pages-and-vertical-spacing.html">Pages and vertical spacing</a>
+<a class="nav-link " href="../../formatting/positioning-of-elements.html">Positioning of elements</a>
+<a class="nav-link " href="../../formatting/score-size-and-spacing.html">Score size and spacing</a>
+<a class="nav-link " href="../../formatting/systems-and-horizontal-spacing.html">Systems and horizontal spacing</a>
+<a class="nav-link " href="../../formatting/using-frames-for-additional-content.html">Using frames for additional content</a>
+<a class="nav-link " href="../../formatting/using-sections-for-multiple-movements-or-songs.html">Using sections for multiple movements or songs</a>
+<a class="nav-link " href="../../formatting/working-with-images.html">Working with images</a></div></details>
+<details open><summary>Idiomatic Notation</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar.html">Guitar</a>
+<a class="nav-link " href="../../idiomatic-notation/harp.html">Harp</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard.html">Keyboard</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion.html">Percussion</a>
+<details open><summary>Guitar</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/guitar/alternate-string-tunings.html">Alternate string tunings</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/applying-capos.html">Applying capos</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/creating-a-tablature-staff.html">Creating a tablature stave</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/customizing-a-tablature-staff.html">Customising a tablature stave</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/entering-and-editing-tablature-notation.html">Entering and editing tablature notation</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagram-legend.html">Fretboard diagram legend</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/fretboard-diagrams.html">Fretboard diagrams</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-bends.html">Guitar bends</a>
+<a class="nav-link " href="../../idiomatic-notation/guitar/guitar-techniques.html">Guitar techniques</a></div></details>
+<details open><summary>Keyboard</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/keyboard/accordion-notation.html">Accordion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/cross-staff-notation.html">Cross-stave notation</a>
+<a class="nav-link " href="../../idiomatic-notation/keyboard/pedal.html">Pedal</a></div></details>
+<details open><summary>Percussion</summary><div class="sub"><a class="nav-link " href="../../idiomatic-notation/percussion/customizing-the-percussion-panel.html">Customising the percussion panel</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/inputting-percussion-notation.html">Inputting percussion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/other-percussion-notation.html">Other percussion notation</a>
+<a class="nav-link " href="../../idiomatic-notation/percussion/percussion-kit-customization.html">Percussion kit customisation</a></div></details></div></details>
+<details open><summary>Introduction</summary><div class="sub"><a class="nav-link " href="../../introduction/create-your-first-score.html">Create your first score</a>
+<a class="nav-link " href="../../introduction/download-and-installation.html">Download and installation</a>
+<a class="nav-link " href="../../introduction/upgrading-from-earlier-versions.html">Upgrading from earlier versions</a></div></details>
+<details open><summary>Navigation</summary><div class="sub"><a class="nav-link " href="../../navigation/accessibility.html">Accessibility</a>
+<a class="nav-link " href="../../navigation/braille.html">Braille</a>
+<a class="nav-link " href="../../navigation/navigating-your-score.html">Navigating your score</a>
+<a class="nav-link " href="../../navigation/the-user-interface.html">The user interface</a>
+<a class="nav-link " href="../../navigation/timeline.html">Timeline</a></div></details>
+<details open><summary>Notation</summary><div class="sub"><a class="nav-link " href="../expressive-markings.html">Expressive markings</a>
+<a class="nav-link " href="../instruments-staves-and-systems.html">Instruments, staves, and systems</a>
+<a class="nav-link " href="../pitch.html">Pitch</a>
+<a class="nav-link " href="../repeats.html">Repeats</a>
+<a class="nav-link " href="../rhythm-meter-and-measures.html">Rhythm, meter, and bars</a>
+<details open><summary>Expressive Markings</summary><div class="sub"><a class="nav-link " href="arpeggios-and-glissandos.html">Arpeggios and glissandos</a>
+<a class="nav-link " href="articulations.html">Articulations</a>
+<a class="nav-link " href="breaths-and-pauses.html">Breaths and pauses</a>
+<a class="nav-link active" href="dynamics-and-hairpins.html">Dynamics and hairpins</a>
+<a class="nav-link " href="grace-notes.html">Grace notes</a>
+<a class="nav-link " href="laissez-vibrer-ties.html">Laissez vibrer ties</a>
+<a class="nav-link " href="ornaments.html">Ornaments</a>
+<a class="nav-link " href="other-lines.html">Other lines</a>
+<a class="nav-link " href="other-symbols.html">Other symbols</a>
+<a class="nav-link " href="slurs-and-ties.html">Slurs and ties</a>
+<a class="nav-link " href="tremolos-and-rolls.html">Tremolos and rolls</a></div></details>
+<details open><summary>Instruments Staves And Systems</summary><div class="sub"><a class="nav-link " href="../instruments-staves-and-systems/brackets.html">Brackets</a>
+<a class="nav-link " href="../instruments-staves-and-systems/implode-and-explode.html">Implode and explode</a>
+<a class="nav-link " href="../instruments-staves-and-systems/instruments-and-system-markings.html">Instruments and system markings</a>
+<a class="nav-link " href="../instruments-staves-and-systems/mid-score-instrument-changes.html">Mid-score instrument changes</a>
+<a class="nav-link " href="../instruments-staves-and-systems/showing-staves-only-where-needed.html">Showing staves only where needed</a>
+<a class="nav-link " href="../instruments-staves-and-systems/staff-type-change.html">Stave type change</a>
+<a class="nav-link " href="../instruments-staves-and-systems/staff-part-properties.html">Stave/Part properties</a></div></details>
+<details open><summary>Pitch</summary><div class="sub"><a class="nav-link " href="../pitch/ambitus.html">Ambitus</a>
+<a class="nav-link " href="../pitch/clefs.html">Clefs</a>
+<a class="nav-link " href="../pitch/key-signatures.html">Key signatures</a>
+<a class="nav-link " href="../pitch/noteheads.html">Noteheads</a>
+<a class="nav-link " href="../pitch/octave-lines.html">Octave lines</a>
+<a class="nav-link " href="../pitch/respell-pitches.html">Respell pitches</a>
+<a class="nav-link " href="../pitch/transposition.html">Transposition</a></div></details>
+<details open><summary>Repeats</summary><div class="sub"><a class="nav-link " href="../repeats/measure-and-multimeasure-repeats.html">Bar and multibar repeats</a>
+<a class="nav-link " href="../repeats/changes-and-courtesies-at-repeats-and-jumps.html">Changes and courtesies at repeats and jumps</a>
+<a class="nav-link " href="../repeats/items-across-repeats-and-jumps.html">Items across repeats and jumps</a>
+<a class="nav-link " href="../repeats/jumps-and-markers.html">Jumps and markers</a>
+<a class="nav-link " href="../repeats/repeat-signs.html">Repeat signs</a>
+<a class="nav-link " href="../repeats/voltas.html">Voltas</a></div></details>
+<details open><summary>Rhythm Meter And Measures</summary><div class="sub"><a class="nav-link " href="../rhythm-meter-and-measures/pickup-and-non-metered-measures.html">Anacrusis and non-metered bars</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-and-multimeasure-rests.html">Bar and multibar rests</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-numbering.html">Bar numbering</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/measure-properties.html">Bar properties</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/barlines.html">Barlines</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/beams.html">Beams</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/regroup-rhythms.html">Regroup rhythms</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/stems-and-flags.html">Stems and flags</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/time-signatures.html">Time signatures</a>
+<a class="nav-link " href="../rhythm-meter-and-measures/tuplets.html">Tuplets</a></div></details></div></details>
+<details open><summary>Sound And Playback</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/mixer.html">Mixer</a>
+<a class="nav-link " href="../../sound-and-playback/musesounds.html">MuseSounds</a>
+<a class="nav-link " href="../../sound-and-playback/playback-controls.html">Playback controls</a>
+<a class="nav-link " href="../../sound-and-playback/sound-flags.html">Sound flags</a>
+<a class="nav-link " href="../../sound-and-playback/soundfonts.html">SoundFonts</a>
+<a class="nav-link " href="../../sound-and-playback/swing-playback.html">Swing playback</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-midi.html">Working with MIDI</a>
+<a class="nav-link " href="../../sound-and-playback/working-with-vst-and-vsti.html">Working with VST and VSTi</a>
+<details open><summary>Musesounds</summary><div class="sub"><a class="nav-link " href="../../sound-and-playback/musesounds/online-sounds.html">Online sounds</a></div></details></div></details>
+<details open><summary>Support</summary><div class="sub"><a class="nav-link " href="../../support/getting-help.html">Getting help</a>
+<a class="nav-link " href="../../support/revert-to-factory-settings.html">Revert to factory settings</a>
+<a class="nav-link " href="../../support/troubleshooting.html">Troubleshooting</a></div></details>
+<details open><summary>Text</summary><div class="sub"><a class="nav-link " href="../../text/chord-symbols.html">Chord symbols</a>
+<a class="nav-link " href="../../text/entering-and-editing-text.html">Entering and editing text</a>
+<a class="nav-link " href="../../text/figured-bass.html">Figured bass</a>
+<a class="nav-link " href="../../text/fingering.html">Fingering</a>
+<a class="nav-link " href="../../text/formatting-text.html">Formatting text</a>
+<a class="nav-link " href="../../text/header-and-footer.html">Header and footer</a>
+<a class="nav-link " href="../../text/lyrics.html">Lyrics</a>
+<a class="nav-link " href="../../text/rehearsal-marks.html">Rehearsal marks</a>
+<a class="nav-link " href="../../text/staff-system-and-expression-text.html">Stave, system, and expression text</a>
+<a class="nav-link " href="../../text/tempo-markings.html">Tempo markings</a>
+<a class="nav-link " href="../../text/text-blocks.html">Text blocks</a></div></details>
+</div></nav>
+</aside>
+<label for="sidebar-toggle" class="backdrop"></label>
+<main class="content">
+  <header class="topbar">
+    <label for="sidebar-toggle" class="menu-btn">☰</label>
+    <div class="crumb">MuseScore Studio Handbook</div>
+    <a class="lang-btn" href="../../../zh/notation/expressive-markings/dynamics-and-hairpins.html">中文</a>
+  </header>
+  <article class="article"><h1 id="dynamics-and-hairpins">Dynamics and hairpins</h1>
+<h2 id="overview">Overview</h2>
+<p>All dynamics symbols are to be found in the <strong>Dynamics</strong> palette:</p>
+<figure><img src="../../../assets/JFwWNj8duJMlYbywJYV0.png" alt="Dynamics palette" width="295"><figcaption><p>The <strong>Dynamics</strong> palette</p></figcaption></figure>
+
+<p>This includes all the standard dynamics symbols (<strong><em>p</em></strong>, <strong><em>mf</em></strong>, <strong><em>ff</em></strong>, etc.) as well as gradual dynamic changes in the form of hairpins:</p>
+<figure><img src="../../../assets/1gg44OT5NZhUkHnA4KpN.png" alt="Hairpins"><figcaption></figcaption></figure>
+
+<p>and in the form of cresc. and dim. text lines, which function in the same way but are more suitable for longer spans:</p>
+<figure><img src="../../../assets/8Ry7CSzslh7aJu6DbWfT.png" alt="Crescendo and diminuendo lines"><figcaption></figcaption></figure>
+
+<p>Unless stated otherwise, anything in this document that refers to hairpins also applies to <em>cresc./dim.</em> lines.</p>
+<h2 id="adding-dynamics-and-hairpins">Adding dynamics and hairpins</h2>
+<h3 id="from-the-palette">From the palette</h3>
+<p>To add a dynamics symbol to the score, either:</p>
+<ul>
+<li>Select one or more notes, and then click an item in the <strong>Dynamics</strong> palette, or</li>
+<li>Drag an item from the <strong>Dynamics</strong> palette onto a note.</li>
+</ul>
+<p>To add a hairpin to the score:</p>
+<ol>
+<li>Select the note(s) to which you wish to add a hairpin, by either</li>
+<li>selecting a single note; in this case, the hairpin will be drawn up to the next note, or</li>
+<li>selecting a range of notes or measures</li>
+<li>Add the hairpin by either</li>
+<li>clicking a hairpin in the Dynamics palette, or</li>
+<li>using the keyboard shortcuts <code>&lt;</code> to add a crescendo hairpin, or <code>&gt;</code> to enter a diminuendo hairpin.</li>
+</ol>
+<p>You can also drag a hairpin from the palette directly onto a note, in which case it will extend to the end of the measure.</p>
+<div class="hint hint-info">
+<p>The right-hand end of a hairpin is attached to the first note (or rest) _after_ the range to which you apply it, though it will be drawn to end just before that note. Therefore, do not include the final note in the range that you select.</p>
+</div>
+<h3 id="from-the-dynamics-popup">From the dynamics popup</h3>
+<p>You can also add a dynamic via the dynamics popup:</p>
+<ol>
+<li>Select a note</li>
+<li>Type <code>Ctrl</code>+<code>D</code> (Mac: <code>Cmd</code>+<code>D</code>) to open the dynamics popup</li>
+<li>Click on a dynamic in the popup, or type it directly (e.g. <code>pp</code> or <code>mf</code>, etc.) and then press <code>Esc</code> or click on a blank area of the score, whereupon the text, if valid, will convert to a dynamic symbol.</li>
+</ol>
+<figure><img src="../../../assets/FYikOvsyInd8xMp5KZXV.png" alt="" width="236"><figcaption><p>The dynamics popup</p></figcaption></figure>
+
+<p>You can access more dynamics in the popup by clicking the left and right arrows.</p>
+<p>With a dynamic selected, you can also create a hairpin directly from that dynamic by dragging the handle at the right of the dynamic out the note or anchor where you want it to end. When you let go, the dynamics popup will reappear, and you can select a new dynamic to go at the end of the hairpin. If that dynamic is of a lower level than the starting dynamic, the hairpin will switch from a crescendo to a decrescendo.</p>
+<p>This makes it very quick and efficient to enter chains of dynamics and hairpins.</p>
+<h2 id="replacing-dynamics">Replacing dynamics</h2>
+<p>When a dynamic is selected, you can easily replace it with another dynamic by either clicking a different dynamic in the Dynamics palette or in the dynamics popup. The new dynamic will replace the selected one.</p>
+<h2 id="editing-hairpins">Editing hairpins</h2>
+<h3 id="adjusting-hairpin-height">Adjusting hairpin height</h3>
+<p>The handle at the bottom of the open end of a hairpin, here shown in gray as when selected, can be used to control its height:</p>
+<figure><img src="../../../assets/Kl2C3NCsfYMpnLT2nu9i.png" alt="Hairpin height adjustement"><figcaption></figcaption></figure>
+
+<p>To do so:</p>
+<ol>
+<li>Select the hairpin</li>
+<li>Select the height handle</li>
+<li>Drag the handle up or down, or use the <code>Up</code>/<code>Down</code> arrow keys.</li>
+</ol>
+<p>You can also adjust height via the <strong>Properties</strong> panel: see Hairpin properties.</p>
+<h3 id="drawing-at-an-angle">Drawing at an angle</h3>
+<p>By default all hairpins are drawn level. To draw one at an angle, first ensure that the <strong>Allow diagonal</strong> box is checked in the <strong>Properties</strong> panel (in the <strong>Style</strong> tab). You will then be able to move the start and end handles of the hairpin independently on the vertical plane.</p>
+<h2 id="assigning-dynamics-to-voices">Assigning dynamics to voices</h2>
+<p>By default, dynamics are assigned to all voices on the instrument when they are entered. If you would prefer all dynamics to be assigned to the voice of the note to which they are applied, this is available as an option in <strong>Preferences -&gt; Note input -&gt; Voice assignment</strong>:</p>
+<figure><img src="../../../assets/Z3cfXH1kavGi2Mk9wCz1.png" alt="" width="316"><figcaption></figcaption></figure>
+
+<p>Changing this preference will not affect the assignment of any existing dynamics.</p>
+<p>Regardless of this setting, you can assign a dynamic directly to a specific voice when you add it:</p>
+<ol>
+<li>Select a note or rest in the score</li>
+<li>Click on a dynamic in the <strong>Dynamics</strong> palette while holding <code>Ctrl</code> (Mac: <code>Cmd</code>)</li>
+<li>The dynamic will be assigned to the voice of the selected note or rest.</li>
+</ol>
+<p>(Currently this does not work when dragging dynamics from the palette, or when using the dynamics popup. In these cases, dynamics will be assigned to all voices.)</p>
+<p>You can change the voice assignment of an existing dynamic in multiple ways. Firstly, by selecting the dynamic and clicking one of the buttons in <strong>Properties -&gt; Voice assignment</strong>:</p>
+<figure><img src="../../../assets/KQWsesrtS8gl1Xd3ZtOM.png" alt="Voice assignment options for single-staff instruments"><figcaption></figcaption></figure>
+
+<p>For instruments with multiple staves, clicking the the <strong>All</strong> button will open a menu with distinct options for</p>
+<ul>
+<li><strong>All voices on this instrument</strong> (all voices on all staves of the instrument)</li>
+<li><strong>All voices on this staff only</strong> (all voices on the staff to which the dynamic is attached)</li>
+</ul>
+<figure><img src="../../../assets/UPp28OlaCrlEGBPcQWN3.png" alt="Voice assignment options for multi-staff instruments"><figcaption></figcaption></figure>
+
+<p>You can also either:</p>
+<ul>
+<li>Click one of the voice buttons in the top toolbar to assign to voices 1–4 (you cannot select <strong>All</strong> via this method), or</li>
+<li>Use the keyboard shortcuts:</li>
+<li>For voice <strong>1</strong>–<strong>4</strong>: <code>Ctrl</code>+<code>Alt</code>+<code>1</code>–<code>4</code> (Mac: <code>Cmd</code>+<code>Opt</code>+<code>1</code>–<code>4</code>)</li>
+<li>For <strong>All</strong>: <code>Ctrl</code>+<code>Alt</code>+<code>0</code> (Mac: <code>Cmd</code>+<code>Opt</code>+<code>0</code>)</li>
+</ul>
+<p>For instruments with multiple staves, this last shortcut will apply the <strong>All voices on instrument</strong> option. For <strong>All voices on this staff only</strong>, use <code>Ctrl</code>+<code>Alt</code>+<code>-</code> (Mac: <code>Cmd</code>+<code>Opt</code>+<code>-</code>.</p>
+<div class="hint hint-info">
+<p>In playback, a dynamic affects its assigned voice(s) from the point at which it appears until another dynamic in the same voice, or a dynamic that affects all voices, is reached.</p>
+<p>See the Dynamics playback compatibility to learn how the voice assignment feature works with different sound technologies.</p>
+</div>
+<h2 id="positioning-dynamics-and-hairpins">Positioning dynamics and hairpins</h2>
+<p>There are three options available in <strong>Format → Style → Dynamics &amp; hairpins → Default positions of dynamics and hairpins</strong> which control general dynamics positioning:</p>
+<figure><img src="../../../assets/8jZ3hb7bzm8hk5NO9j4M.png" alt="Dynamics &#x26; hairpins default positioning"><figcaption></figcaption></figure>
+
+<ul>
+<li><strong>Position</strong> determines whether dynamics should be positioned according to their voice assignment ('Based on voice', the default), or should all go 'Above' or 'Below'</li>
+<li><strong>Place above the staff on vocal instruments</strong> specifies whether dynamics should go above the staff on vocal staves (on by default)</li>
+<li><strong>Center on grand staff instruments automatically</strong> will center dynamics vertically between the staves of multi-stave instruments automatically (on by default).</li>
+</ul>
+<h3 id="voice-based-positioning">Voice-based positioning</h3>
+<p>If the <strong>Based on voice</strong> position is chosen, voice assignment will affect the default position of dynamics as follows:</p>
+<ul>
+<li>Voice 1 dynamics go below the staff if there is only one voice at that rhythmic position, and otherwise go above</li>
+<li>Voice 3 dynamics go above the staff</li>
+<li>Voice 2 and 4 dynamics go below the staff</li>
+<li>Dynamics assigned <strong>all</strong> voices go below the staff</li>
+</ul>
+<p>The position of any dynamic can be explicitly overridden via <strong>Properties → Position</strong>.</p>
+<div class="hint hint-info">
+<p>If **Place above the staff on vocal instruments** is turned on then, on vocal staves, dynamics assigned to voice 1 will go above the staff, as will dynamics assigned to all voices on the staff. Voice 2 and 4 dynamics will still go below.</p>
+</div>
+<h3 id="centering-dynamics-between-staves">Centering dynamics between staves</h3>
+<p>Dynamics on grand staff instruments (e.g. keyboards, keyboard percussion, harp) can be centered vertically between the staves.</p>
+<p>If the <strong>Center on grand staff staves automatically</strong> option is turned on,</p>
+<p>By default, dynamics are automatically centered (i.e. when when:</p>
+<ul>
+<li>There is a staff on the same instrument above or below the dynamic (according to its position relative to the staff to which it is attached) against which it can be centered</li>
+<li><strong>Properties -&gt; Voice assignment</strong> is set to <strong>All voices on instrument</strong></li>
+<li><strong>Properties -&gt; Center between staves</strong> is set to <strong>Auto</strong></li>
+<li>In <strong>Format -&gt; Style -&gt; Dynamics &amp; hairpins</strong>, the <strong>Center on grand staff instruments automatically</strong> option is on</li>
+<li>No manual Y-offset has been applied to the dynamic.</li>
+</ul>
+<p>You can also manually center dynamics by setting <strong>Center between staves</strong> to <strong>On</strong> and configuring <strong>Position</strong> based on whether the staff to which you want to center is above or below.</p>
+<h3 id="avoiding-barlines">Avoiding barlines</h3>
+<p>Dynamics are centered under the note or rest to which they are attached. In the case of longer dynamics such as <strong><em>ppp</em></strong> this can easily mean that they would collide with a barline that precedes or follows them, when there is a barline connecting to the staff below. By default, dynamics items will be offset to the left or right to avoid these collisions. This behaviour can be turned off globally (<strong>Format -&gt; Style -&gt; Dynamics &amp; hairpins -&gt; Avoid barlines</strong>), or for a specific item via the <strong>Properties</strong> panel.</p>
+<figure><img src="../../../assets/Ufp7p9fVQaISYpX7mVNI.png" alt="" width="137"><figcaption><p><strong>Avoid barlines</strong> on</p></figcaption></figure>
+
+<figure><img src="../../../assets/iTzl4cRPGIybbRa76tzy.png" alt="" width="144"><figcaption><p><strong>Avoid barlines</strong> off</p></figcaption></figure>
+
+<p>The second image shows the result if this option is turned off, but text masking is turned on (<strong>Format -&gt; Style -&gt; Barlines -&gt; Mark barlines with intersecting text</strong>). If this option were also turned off, the barlines would be drawn over the top of the dynamics.</p>
+<p>If the dynamic has additional text typed before or after it, this is also included in the barline avoidance. See Text as part of a dynamics item for details.</p>
+<h2 id="moving-dynamics-and-hairpins">Moving dynamics and hairpins</h2>
+<p>Dynamics, and the endpoints of hairpins, do not have to be attached only to notes or rests, but can be moved to rhythmic positions within longer durations. See Anchors and also Changing the range of a line.</p>
+<p>If a dynamic has a hairpin snapped to it on either side or both, the endpoints of these hairpins will follow the dynamic as it is moved around. See Snapping and alignment.</p>
+<h2 id="snapping-and-alignment">Snapping and alignment</h2>
+<p>If a piece of Expression text is at the same position as a dynamic, and has the same voice assignment and the same position setting (above/below), the two items will snap together, with the expression positioned after the dynamic. If either item is moved, the other will follow.</p>
+<p>To decouple a piece of Expression text from a dynamic:</p>
+<ol>
+<li>Select the text</li>
+<li>Go to the <strong>Properties</strong> panel</li>
+<li>Under <strong>Expression</strong>, uncheck <strong>Align with preceding dynamic</strong>.</li>
+</ol>
+<p>You can then move the items independently of each other.</p>
+<p>If you want to disable this snapping behaviour entirely, uncheck <strong>Format -&gt; Style -&gt; Expression text -&gt; Snap to dynamics</strong>.</p>
+<p>If a hairpin starts and/or ends at the same position as a dynamic, and has the same voice assignment and the same position setting (above/below), the hairpin will automatically vertically align with the dynamic(s) at either end.</p>
+<p>To disable this behaviour for a specific hairpin:</p>
+<ol>
+<li>Select the hairpin</li>
+<li>Go to the <strong>Properties</strong> panel</li>
+<li>Under <strong>Expression</strong>, in the <strong>Position</strong> tab, uncheck <strong>Snap to previous</strong> (to disable alignment with any dynamic at the beginning of the hairpin) and/or <strong>Snap to next</strong> (to disable alignment with any dynamic at the end).</li>
+</ol>
+<p>Flipping the position of a snapped or aligned item to the other side of the staff, or changing the voice assignment of either item, will automatically stop it from snapping or aligning.</p>
+<h2 id="combining-dynamics-and-text">Combining dynamics and text</h2>
+<p>There are two ways to combine dynamics and text together, and there are subtle but important differences between them.</p>
+<h3 id="dynamics-and-expression-text">Dynamics and expression text</h3>
+<p>Where a dynamic is followed by an expressive marking, for example <strong><em>p</em><em> dolce</em> or </strong><em>f</em><em> espress.</em>, it is best to input the dynamic and the expression text as separate items. The two will automatically snap together (see Snapping and alignment).</p>
+<p>The quickest way to add expression text to a dynamic in this way is:</p>
+<ol>
+<li>Enter a dynamic into the score via any method (the dynamic will be selected once it is entered)</li>
+<li>Click the <em>expression</em> item in the <strong>Text</strong> palette, which adds a piece of expression text after the dynamic</li>
+<li>Edit the expression text as necessary (assuming the text is selected, which it will be after it is entered, simply press <code>Enter</code> to go into editing mode).</li>
+</ol>
+<p>You can also input them the other way round (expression, then dynamic), though the expression will still be placed after the dynamic.</p>
+<p>The <em>cresc./dim.</em> text lines can be added to a dynamic in exactly the same way, and will snap to the dynamic, as will hairpins.</p>
+<h3 id="text-as-part-of-a-dynamics-item">Text as part of a dynamics item</h3>
+<p>If the text is part of a dynamic phrase, for example <em>più </em><em>p</em><strong> or </strong><em>f</em><em> sub.</em>, it is usually best to type these directly into the dynamic, so that it is treated as a single item. This is also the only way to put text <em>before</em> the dynamics symbol, as expression items are always placed after the dynamic when snapped.</p>
+<ol>
+<li>Double click the dynamic, or select it and press <code>Enter</code>, to go into editing mode</li>
+<li>Use the cursor keys to move to the start or end of the item (if necessary)</li>
+<li>Type in the text.</li>
+</ol>
+<p>Any text typed into a Dynamic item is styled as Expression text, and is scaled independently of the dynamics symbols.</p>
+<p>When <strong>Avoid barlines</strong> is turned on, this applies to the entirety of a dynamics item, including any text which is typed into the item itself. It does <em>not</em> apply to any expression item that may be snapped to the barline. Consider the difference between these two examples:</p>
+<figure><img src="../../../assets/29P7TYDQh6b2mUEdyIFu.png" alt="" width="238"><figcaption><p>Dynamic with text typed after it</p></figcaption></figure>
+
+<figure><img src="../../../assets/0T3RiXvx22w9mhQDS6V2.png" alt="" width="234"><figcaption><p>Dynamic with separate expression item</p></figcaption></figure>
+
+<p>In the former case, the barline avoidance pushes the text to the left and the dynamic appears as though it applies earlier than intended. This is one reason why it is often preferable to use separate expression text rather than adding text after a dynamic directly.</p>
+<p>When a dynamics item includes text, you can also choose whether the dynamic should remain centered under the note with the text extending out to the left and/or right (this is the default), or whether the whole item should be centered. These options are available in the <strong>Properties</strong> panel, in the <strong>Dynamics</strong> section under <strong>Show more</strong>:</p>
+<figure><img src="../../../assets/X03A63TGhnS9SyWqMD4N.png" alt="" width="292"><figcaption></figcaption></figure>
+
+<p>The icons illustrate the difference between the two options. This has no effect when a dynamic has an piece of expression text attached to it.</p>
+<h2 id="properties">Properties</h2>
+<p>Individual dynamics and hairpins can be edited via the <strong>Properties</strong> panel. To edit the score-wide settings, see Style.</p>
+<h3 id="dynamics-properties">Dynamics properties</h3>
+<p>For dynamics, the following options are available:</p>
+<ul>
+<li><strong>Scale</strong>: the size of the dynamics symbol, as a percentage relative to default</li>
+<li><strong>Avoid barlines</strong>: whether dynamics should automatically be offset left or right to avoid collisions with barlines (see Avoiding barlines)</li>
+<li><strong>Voice assignment</strong>: to which voice the selected dynamic is assigned; this can affect both its position and also playback; the default is <strong>All</strong> (see Assigning dynamics to voices)</li>
+<li><strong>Position</strong>: whether the dynamic should be positioned above or below the staff; the default, <strong>Auto</strong>, means that the position will be determined by voice assignment</li>
+<li><strong>Center between staves</strong>: on instruments with more than one staff, whether the center the dynamic between the staff to which it is attached and the next staff; the default, <strong>Auto</strong>, means that this will be determined by voice assignment (if the voice is set to anything other than <strong>All voices on instrument</strong>, the dynamic will not be centered)</li>
+</ul>
+<p>Under <strong>Show more</strong>:</p>
+<ul>
+<li><strong>Alignment with notehead</strong>: how to align a dynamics item which has additional text in it; see Text as part of a dynamics item for details</li>
+<li><strong>Border</strong>: allows you to draw a square or round border around the item. The usual additional border settings will appear if either is chosen.</li>
+</ul>
+<p>If the dynamics item has additional text typed into it, there will also be a <strong>Text</strong> heading which contains the usual text properties (font, style, size, etc.) These settings will only affect the text, not any dynamics symbols.</p>
+<h3 id="hairpin-properties">Hairpin properties</h3>
+<p>For hairpins, the following options are available:</p>
+<h4 id="position">Position</h4>
+<ul>
+<li><strong>Voice assignment</strong>: to which voice the selected dynamic is assigned; this can affect both its position and also playback; the default is <strong>All</strong> (see Assigning dynamics to voices, below)</li>
+<li><strong>Position</strong>: whether the dynamic should be positioned above or below the staff; the default, <strong>Auto</strong>, means that the position will be determined by voice assignment</li>
+<li><strong>Alignment with adjacent dynamics</strong></li>
+<li><strong>Snap to previous</strong>: if this is checked, then if there is a dynamic at the start of the hairpin, with the same voice assignment, the hairpin will be drawn starting just after the dynamic (and any expression text that is snapped to it), and vertically aligned with it</li>
+<li><strong>Snap to next</strong>: if this is checked, then if there is a dynamic at the end of the hairpin, with the same voice assignment, the hairpin will be drawn ending just before the dynamic, and vertically aligned with it.</li>
+</ul>
+<h4 id="style">Style</h4>
+<div class="hint hint-info">
+<p>These options are available for hairpins specifically. For _cresc._/_dim._ lines the options are instead the same as for other text lines: see [Line properties](%1).</p>
+</div>
+<ul>
+<li><strong>Niente circle</strong>: draws a small circle at the point of the hairpin to indicate <em>niente</em> (coming from or going to nothing)</li>
+<li><strong>Allow diagonal</strong>: allow the hairpin to be angled (see Drawing at an angle)</li>
+<li><strong>Thickness</strong>: the thickness of the line</li>
+<li><strong>Height</strong>: the height of the open end of the hairpin (see Adjusting hairpin height)</li>
+<li><strong>Height (new system)</strong>: the height of the opening of the hairpin at the start of a new system, when it crosses a system break.</li>
+</ul>
+<h4 id="text">Text</h4>
+<p>These settings are the same as for text lines: see Line properties.</p>
+<h2 id="style_1">Style</h2>
+<p><em>See the main chapter</em> <em>Templates and styles</em></p>
+<p><strong>Format -&gt; Style -&gt; Dynamics &amp; hairpins</strong> contains options for the default positioning, spacing, and appearance of dynamics and hairpins.</p>
+<div class="hint hint-info">
+<p>You can edit the expression text style (which affects Expression text items and also any normal text typed into Dynamics items) in **Format → Style → Text styles → Expression**.</p>
+</div>
+<h3 id="default-positions-of-dynamics-and-hairpins">Default positions of dynamics and hairpins</h3>
+<p>See Positioning dynamics and hairpins.</p>
+<h3 id="dynamics">Dynamics</h3>
+<ul>
+<li><strong>Override score font</strong>: dynamics are usually taken from the music font (as specified in <strong>Format -&gt; Style -&gt; Score -&gt; Musical symbols font</strong>). If you want to use a different font for dynamics <em>only</em>, check this box, and then select your desired font from the <strong>Font</strong> dropdown</li>
+<li><strong>Avoid barlines</strong>: whether all dynamics should be offset to avoid barlines by default (see Avoiding barlines)</li>
+<li><strong>Scale</strong>: the size of dynamics symbols, as a percentage relative to default</li>
+<li><strong>Offset above/below</strong>: the default vertical position of dynamics above and below the staff</li>
+<li><strong>Autoplace min. distance</strong>: the minimum distance between a dynamic and the staff, or an item between it and the staff.</li>
+</ul>
+<div class="hint hint-info">
+<p>Though dynamics look like text, and are frequently used alongside text, they are better considered as musical symbols like any other (clefs, noteheads, etc) and in any given music font are designed at a certain size appropriate to the other symbols in the font. This is why the **Scale** setting is not expressed in points, but as a percentage, where 100% represents 'the size at which they are designed'.</p>
+</div>
+<h3 id="hairpins">Hairpins</h3>
+<ul>
+<li><strong>Offset above/below</strong>: the default vertical position of hairpins above and below the staff</li>
+<li><strong>Height</strong>: the default height of the open end of hairpins</li>
+<li><strong>Continue height</strong>: the default height of the opening of hairpins at the start of a new system, when they cross a system break</li>
+<li><strong>Autoplace, distance to dynamics</strong>: the distance between the end of a hairpin and a dynamic</li>
+<li><strong>Line thickness</strong>: the default line thickness.</li>
+</ul>
+<h2 id="dynamics-playback-compatibility">Dynamics playback compatibility</h2>
+<p>Support for voice-specific dynamics varies depending on the sound technology chosen (e.g. SoundFont, VST, or Muse Sounds) and whether the instrument is a <strong>single-note-dynamic</strong> instrument (i.e. an instrument capable of changing its dynamic on a single note, such as the violin or flute) or a <strong>non-single-note-dynamic instrument</strong> (e.g. the piano or percussion instruments, where the instrument's dynamic properties begin to recede after a note's initial attack).</p>
+<p>In the below table, <strong>single-note-dynamic</strong> instruments are referred to as <strong>SND instruments</strong>, while <strong>non-single-note-dynamic instruments</strong> are referred to as <strong>non-SND instruments</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Sound technnology</th>
+<th>Support for individual voices/staves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muse Sounds</td>
+<td>Full support for per-voice and per-stave dynamics.</td>
+</tr>
+<tr>
+<td>SoundFont (MS Basic)</td>
+<td>Both SND and non-SND instruments will support dynamics on individual voices. Only non-SND instruments will support dynamics on individual staves.</td>
+</tr>
+<tr>
+<td>VST</td>
+<td>Only non-SND instruments support per-voice and per-staff dynamics.</td>
+</tr>
+</tbody>
+</table></article>
+  <nav class="prevnext"><a class="pn prev" href="breaths-and-pauses.html"><span>← Previous</span>Breaths and pauses</a>
+<a class="pn next" href="grace-notes.html"><span>Next →</span>Grace notes</a></nav>
+  <footer class="footer">
+    <p>Powered by eyz2021 with Love</p>
+  </footer>
+</main>
+<script>window.LANG="en";</script>
+<script>window.PAGE_DIR="en_gb/notation/expressive-markings";</script>
+<script src="../../../_static/search_index.js"></script>
+<script src="../../../_static/app.js"></script>
+</body>
+</html>
